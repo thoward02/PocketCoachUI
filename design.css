@@ -6,13 +6,13 @@
   color: #05151C;
   background-image: linear-gradient( rgb(62, 135, 171), rgb(27, 110, 129)  );
 
-  box-shadow: 5px 0 20px 5px #5C5C5C;
+  border: none;
 
 
 }
 
   #AppHead-Title{
-    padding-top: 0.5%;
+    padding-top: 0%;
 
     font-size: 100px;
     letter-spacing: 15px;
@@ -37,12 +37,12 @@
 
     top: 0;
 
-    width: 40%;
     height: 30%;
+    width: 50%;
 
 
-    margin-left: 30%;
-    margin-top: 160%;
+    margin-left: 25%;
+    margin-top: 110%;
 
 
   }

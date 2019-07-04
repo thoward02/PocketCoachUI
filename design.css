@@ -1,125 +1,57 @@
-#AppHead{
-  position: sticky;
+#Display{
+  display: flex;
+
   width: 100%;
-  height: 7%;
+  height: 100%;
 
-  color: #05151C;
-  background-image: linear-gradient( rgb(62, 135, 171), rgb(27, 110, 129)  );
+}
+#LeftSide{
+  display: fixed;
+  float: left;
 
-  border: none;
+  height:100%;
+  width: 40%;
 
+  background-color: #7990AB;
+
+  font-size: 40px;
+}
+
+#RightSide{
+  position: relative;
+
+  width: 60%;
+  height: 100%;
 
 }
 
-  #AppHead-Title{
-    padding-top: 0%;
 
-    font-size: 100px;
-    letter-spacing: 15px;
-    text-align: center;
+#TopBar{
+  padding: 1%;
 
-  }
-
-
-#AppBody{
-  height: 92%;
+  height: 5%;
   width: 100%;
 
-  color: #FA9C1D;
-  background-color: #4A4C4E;
+  font-size: 60px;
 
-  overflow-y: scroll;
+  color: #615D8C;
+  background-color: #7E79B8;
+}
+
+#AppHolder{
+  padding: 1%;
+
+  height: 95%;
+
+  background-color: #808CC2;
+
+  font-size: 40px;
+
 
 }
 
-  #HomeButtonDiv{
-    position: fixed;
-
-    top: 0;
-
-    height: 30%;
-    width: 50%;
-
-
-    margin-left: 25%;
-    margin-top: 110%;
-
-
-  }
-
-
-  .TestBoxes{
-    display: inline-block;
-
-    background-color: #05151C;
-
-    color: #3CB8C2;
-
-    padding-left: 2%;
-
-    width: 100%;
-    height: 12%;
-  }
-
-  .TestBoxes-LeftSide{
-    margin-top: 1%;
-    float: left;
-
-    width: 30%;
-    height: 90%;
-
-
-  }
-
-  .TestBoxes-RightSide{
-    margin-top: 1%;
-
-    width: 95%;
-    height: 90%;
-
-
-  }
-
-
-    .TestBoxes-Video{
-      margin-top: 1.25%;
-      background-color: black;
-
-      width: 95%;
-      height: 95%;
-
-    }
-
-    .TestBoxes-Header{
-      font-size: 50px;
-
-    }
-
-    .TestBoxes-Body{
-      font-size: 30px;
-    }
-
-
-#AppFooter{
-  width: 100%;
-  height: 1%;
-
-  color: #4A4C4E;
-  background-color: #11465B;
-
-  box-shadow: -5px 0 5px -5px #000000;
-
-}
-
-
-@font-face {
-  font-family: Kiona;
-  src: url(./Resources/Kiona-Regular.ttf);
-}
 body{
-  font-family: Kiona;
 
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+
 }

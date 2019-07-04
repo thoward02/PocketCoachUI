@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
+	 <linearGradient id="MenuButtonGradient" x2="1" y2="1">
+	<stop offset="0%" stop-color="rgb(183,120,255)" />
+	<stop offset="100%" stop-color="rgb(191,233,242)" />
+
+	</linearGradient>
+<style type="text/css">
+	.st0{fill:url(#MenuButtonGradient);}
+</style>
+<g id="XMLID_1_">
+	<path id="XMLID_6_" class="st0" d="M77.4,53.4H18.7c-3.2,0-3.2-2.2-3.2-5.4s0-5.4,3.2-5.4h58.6c3.2,0,3.2,2.2,3.2,5.4
+		S80.5,53.4,77.4,53.4L77.4,53.4z M77.4,31.7H18.7c-3.2,0-3.2-2.2-3.2-5.4s0-5.4,3.2-5.4h58.6c3.2,0,3.2,2.2,3.2,5.4
+		S80.5,31.7,77.4,31.7L77.4,31.7z M18.7,64.3h58.6c3.2,0,3.2,2.2,3.2,5.4c0,3.2,0,5.4-3.2,5.4H18.7c-3.2,0-3.2-2.2-3.2-5.4
+		C15.5,66.5,15.5,64.3,18.7,64.3z"/>
+</g>
+</svg>

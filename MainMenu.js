@@ -1,11 +1,18 @@
-
+//OwO is the new UwU
 //Page Loading
 window.LoadGuides = function(){
+  document.getElementById("Title").innerHTML = "Guides";
+  document.getElementById("DataHolder").innerHTML = "";
+  document.getElementById("AppHolder-BlackBox").onclick();
 }
 window.LoadCoaching = function(){
+  document.getElementById("Title").innerHTML = "Coaching";
+  document.getElementById("DataHolder").innerHTML = "";
 
 }
 window.LoadQuizzes = function(){
+  document.getElementById("Title").innerHTML = "Quizzes";
+  document.getElementById("DataHolder").innerHTML = "";
 
 }
 
@@ -13,14 +20,12 @@ window.LoadQuizzes = function(){
 //Build leftside menu
 class MenuButton{
 
-  constructor(Title, Function){
+  constructor(Title){
     this.Title = Title;
-    this.Function = Function;
 
 
     this.Elem = document.createElement("div");
     this.Elem.innerHTML = this.Title;
-    this.Elem.onclick = this.Function;
 
     this.Style();
   }
@@ -43,31 +48,33 @@ function BuildMenu(){
   window.Menu = {
     "Guides" : {
 
-      "Funct" : window.LoadGuides(),
+      "Funct" : window.LoadGuides,
       "Class" : null
 
     },
 
     "Coaching" : {
 
-      "Funct" : window.LoadCoaching(),
+      "Funct" : window.LoadCoaching,
       "Class" : null
 
 
     },
     "Quizzes" : {
 
-        "Funct" : window.LoadQuizzes(),
+        "Funct" : window.LoadQuizzes,
         "Class" : null
 
-    },
+    }
   }
 
   //Build menu items
   for(var item in window.Menu){
     //Load item into menu
-    let Block = new MenuButton(item, window.Menu[item].function);
+    let Block = new MenuButton(item);
+    Block.Elem.onclick = window.Menu[item].Funct;
     window.Menu[item].Class = Block;
+
 
     //Append item
     AppMenu.appendChild(Block.Elem);

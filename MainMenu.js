@@ -1,7 +1,7 @@
 //OwO is the new UwU
 //Page Loading
 window.LoadGuides = function(){
-<<<<<<< HEAD
+
   //Clear previous data
   document.getElementById("Title").innerHTML = "Guides";
   document.getElementById("DataHolder").innerHTML = "";
@@ -15,29 +15,20 @@ window.LoadGuides = function(){
   console.log(GuideData);
 
 
-=======
   document.getElementById("Title").innerHTML = "Guides";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
->>>>>>> 34bb28b61c2bc8651c1a488a87ed47367a864238
 }
 window.LoadCoaching = function(){
   document.getElementById("Title").innerHTML = "Coaching";
   document.getElementById("DataHolder").innerHTML = "";
-<<<<<<< HEAD
   document.getElementById("AppHolder-BlackBox").onclick();
-=======
 
->>>>>>> 34bb28b61c2bc8651c1a488a87ed47367a864238
 }
 window.LoadQuizzes = function(){
   document.getElementById("Title").innerHTML = "Quizzes";
   document.getElementById("DataHolder").innerHTML = "";
-<<<<<<< HEAD
   document.getElementById("AppHolder-BlackBox").onclick();
-=======
-
->>>>>>> 34bb28b61c2bc8651c1a488a87ed47367a864238
 }
 
 

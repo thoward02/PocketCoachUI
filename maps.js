@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.Maps = {
 
     "Guides" : {
@@ -142,7 +141,6 @@ window.Maps = {
 
 
 }
-=======
 window.maps = {
 
     "Guides" : {
@@ -286,4 +284,3 @@ window.maps = {
 
 
 }
->>>>>>> 34bb28b61c2bc8651c1a488a87ed47367a864238

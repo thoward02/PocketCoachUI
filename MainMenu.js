@@ -1,8 +1,13 @@
-//Page Loading
-window.LoadGuides = function(){}
-window.LoadCoaching = function(){}
-window.LoadQuizes = function(){}
 
+//Page Loading
+window.LoadGuides = function(){
+}
+window.LoadCoaching = function(){
+
+}
+window.LoadQuizzes = function(){
+
+}
 
 
 //Build leftside menu
@@ -42,16 +47,17 @@ function BuildMenu(){
       "Class" : null
 
     },
+
     "Coaching" : {
 
-      "Funct" : window.LoadGuides(),
+      "Funct" : window.LoadCoaching(),
       "Class" : null
 
 
     },
-    "Quizes" : {
+    "Quizzes" : {
 
-        "Funct" : window.LoadGuides(),
+        "Funct" : window.LoadQuizzes(),
         "Class" : null
 
     },

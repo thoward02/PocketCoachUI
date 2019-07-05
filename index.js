@@ -26,12 +26,16 @@ function Main(){
     //Push it into view
     if(document.getElementById("LeftSide").style.left == "-2000px"){
 
+      //Replace left side
       document.getElementById("LeftSide").style.left = "0px";
 
-    }
-    //Push it out of view
-    else{
       document.getElementById("LeftSide").style.left = "-2000px";;
+        document.getElementById("LeftSide").style.left = "-2000px";
+        document.getElementById("AppHolder").removeChild(document.getElementById("AppHolder-BlackBox"));
+
+      }
+
+
     }
 
   }

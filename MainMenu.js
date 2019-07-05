@@ -1,7 +1,6 @@
 //OwO is the new UwU
 //Page Loading
 window.LoadGuides = function(){
-
   //Clear previous data
   document.getElementById("Title").innerHTML = "Guides";
   document.getElementById("DataHolder").innerHTML = "";
@@ -15,15 +14,11 @@ window.LoadGuides = function(){
   console.log(GuideData);
 
 
-  document.getElementById("Title").innerHTML = "Guides";
-  document.getElementById("DataHolder").innerHTML = "";
-  document.getElementById("AppHolder-BlackBox").onclick();
 }
 window.LoadCoaching = function(){
   document.getElementById("Title").innerHTML = "Coaching";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
-
 }
 window.LoadQuizzes = function(){
   document.getElementById("Title").innerHTML = "Quizzes";

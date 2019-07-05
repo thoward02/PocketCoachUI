@@ -7,7 +7,8 @@ function Main(){
   document.getElementById("Display").style.height = window.innerHeight;
 
   //Set Specific values
-  document.getElementById("LeftSide").style.width = "0%";
+  document.getElementById("LeftSide").style.width = "60%";
+  document.getElementById("LeftSide").style.left = "-2000px";
   document.getElementById("RightSide").style.width = "100%";
 
   //Build Menu
@@ -22,16 +23,15 @@ function Main(){
     //Vars
     let LeftSide = document.getElementById("LeftSide");
 
-    if(LeftSide.style.width != "60%"){
-      document.getElementById("MenuButton").style.paddingLeft = "60%";
-      document.getElementById("LeftSide").style.width = "60%";
-      document.getElementById("RightSide").style.width = "100%";
+    //Push it into view
+    if(document.getElementById("LeftSide").style.left == "-2000px"){
 
-    }else{
-      document.getElementById("MenuButton").style.paddingLeft = "0%";
-      document.getElementById("LeftSide").style.width = "0%";
-      document.getElementById("RightSide").style.width = "100%";
+      document.getElementById("LeftSide").style.left = "0px";
 
+    }
+    //Push it out of view
+    else{
+      document.getElementById("LeftSide").style.left = "-2000px";;
     }
 
   }

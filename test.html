@@ -4,46 +4,14 @@
 
   <script>
     function Main(){
-      window.Button = {
-
-        "MenuButton" : {
-
-          "Elem"  : document.getElementById("HomeButton-MainButton"),
-          "click" : function(){console.log("MainButton")}
-
-        },
-        "Guides"     : {
-
-          "Elem"  : document.getElementById("HomeButton-Guides"),
-          "click" : function(){console.log("Guides")}
-
-        },
-        "Stats"      : {
-
-          "Elem"  : document.getElementById("HomeButton-Stats"),
-          "click" : function(){console.log("Stats")}
-
-        },
-        "Coaching"   : {
-
-          "Elem"  : document.getElementById("HomeButton-Coaching"),
-          "click" : function(){console.log("Coaching")}
-
-        },
-        "Quizes"     : {
-
-          "Elem"  : document.getElementById("HomeButton-Quizes"),
-          "click" : function(){console.log("Quizes")}
-
-        },
-
-
+      let Item1 = document.getElementById("o1");
+      let Item2 = document.getElementById("o2");
+      window.Padding = 0;
+      Item2.onclick = function(){
+        let Item2 = document.getElementById("o2");
+        Item2.style.marginLeft = (window.Padding + "px");
+        window.Padding += 500;
       }
-
-      for(var item in window.Button){
-        console.log(window.Button[item].Elem);
-      }
-
 
 
     }
@@ -61,35 +29,8 @@
 
 <body>
 
-  <div id="HomeButtonDiv" style="z-index: 1;position:fixed;">
-
-    <!-- Menu Buttons -->
-    <svg id="HomeButton-MainButton" height="50%" width="50%" style="position:fixed;">
-      <circle id="HomeButton-MainButton-Circle" cx="50%" cy="50%" r="22%"  stroke-width="3" fill="rgba(255,255,255, 0.8)" />
-    </svg>
-
-    <svg id="HomeButton-Guides" height="55%" width="55%" style="position:fixed;">
-      <circle id="HomeButton-Guides-Circle" cx="12%" cy="30%" r="8%"  stroke-width="3" fill="rgba(235,25,255, 0.8)" />
-    </svg>
-
-
-    <svg id="HomeButton-Stats" height="55%" width="55%" style="position:fixed;">
-      <circle id="HomeButton-Stats-Circle" cx="24%" cy="25%" r="8%"  stroke-width="3" fill="rgba(235,25,255, 0.8)" />
-    </svg>
-
-    <svg id="HomeButton-Coaching" height="25%" width="25%">
-      <circle id="HomeButton-Coaching-Circle" cx="36%" cy="25%" r="8%"  stroke-width="3" fill="rgba(235,25,255, 0.8)" />
-    </svg>
-
-
-    <svg id="HomeButton-Quizes" height="55%" width="55%" style="position:fixed;">
-      <circle id="HomeButton-Quizes-Circle" cx="78%" cy="30%" r="8%"   stroke-width="3" fill="rgba(255,255,255, 0.8)" />
-    </svg>
-    <!-- End of Menu Buttons -->
-
-
-  </div>
-
+  <div id="o1">1</div>
+  <div id="o2">2</div>
 
 
 <style>
@@ -99,20 +40,22 @@
   }
 
 
+  #o1{
+    background-color: white;
+    color: white;
+    width: 100%;
 
-    #HomeButtonDiv{
-      position: fixed;
+    z-index: 2;
+  }
 
-      top: 0;
+  #o2{
+    background-color: white;
+    color: white;
+    width: 100%;
 
-      width: 50%;
-      height: 50%;
+    z-index: 0;
 
-      margin-left: 25%;
-      margin-top: 90%;
-
-    }
-
+  }
 
 </style>
 

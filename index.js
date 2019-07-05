@@ -29,7 +29,21 @@ function Main(){
       //Replace left side
       document.getElementById("LeftSide").style.left = "0px";
 
-      document.getElementById("LeftSide").style.left = "-2000px";;
+      //Create black elem
+      let Black = document.createElement("div");
+      document.getElementById("AppHolder").appendChild(Black);
+      Black.id = "AppHolder-BlackBox";
+
+      //Stylize
+      Black.style.width = "100%";
+      Black.style.height = "100%";
+      Black.style.position = "absolute";
+      Black.style.top = "0";
+      Black.style.float = "left";
+      Black.style.backgroundColor = "rgba(0,0,0,0.5)";
+
+      //Make closing function
+      Black.onclick = function(){
         document.getElementById("LeftSide").style.left = "-2000px";
         document.getElementById("AppHolder").removeChild(document.getElementById("AppHolder-BlackBox"));
 

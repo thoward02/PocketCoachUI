@@ -1,0 +1,76 @@
+#MenuButton{
+  height: 100%;
+  width: 12%;
+  float: left;
+}
+
+#TitleCard{
+  Height: 10%;
+  width: 100%;
+}
+
+#Title{
+
+  height: 10%;
+  width: 70%;
+
+  padding-top: 5%;
+  float: left;
+
+  font-size: 60px;
+  color: rgb(191,233,242);
+  text-align: center;
+
+  font-family: Montserrat;
+  font-style: Extra-Light;
+
+}
+
+#DataHolder{
+  height: 90%;
+  width: 100%;
+
+  overflow-x: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(0,0,0,0.2);
+
+}
+
+  #ProfilePicture{
+    margin-left: 35%;
+    margin-top: 10%;
+
+    border-radius:250px;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(rgb(115,55,176), rgb(86,168,160));
+
+    overflow: hidden;
+  }
+
+  #ProfilePicture-Image{
+
+    width: 200%;
+    height: 200%;
+
+    padding-bottom: 50%;
+    margin-left: -50%;
+  }
+
+  #UserInfo{
+
+    height: 10%;
+    width: 95%;
+
+    font-family: Montserrat;
+    font-style: Extra-Light;
+
+    font-size: 70px;
+
+
+
+    text-align: center;
+  }

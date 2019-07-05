@@ -10,6 +10,9 @@ function Main(){
   document.getElementById("LeftSide").style.width = "0%";
   document.getElementById("RightSide").style.width = "100%";
 
+  //Build Menu
+  BuildMenu();
+
 
   //build main button
   let Button = document.getElementById("MenuButton");

@@ -19,14 +19,14 @@ function Main(){
     //Vars
     let LeftSide = document.getElementById("LeftSide");
 
-    if(LeftSide.style.width != "40%"){
-      document.getElementById("LeftSide").style.width = "40%";
-      document.getElementById("TopBar").style.height = "5%";
+    if(LeftSide.style.width != "60%"){
+      document.getElementById("MenuButton").style.paddingLeft = "60%";
+      document.getElementById("LeftSide").style.width = "60%";
       document.getElementById("RightSide").style.width = "100%";
 
     }else{
+      document.getElementById("MenuButton").style.paddingLeft = "0%";
       document.getElementById("LeftSide").style.width = "0%";
-      document.getElementById("TopBar").style.height = "5%";
       document.getElementById("RightSide").style.width = "100%";
 
     }
@@ -38,6 +38,10 @@ function Main(){
 document.addEventListener("DOMContentLoaded", function(){
 
   Main();
+  window.onresize = function(){
+    document.getElementById("Display").style.height = "100%";
+    document.getElementById("Display").style.width  = "100%";
+  }
 
 
 });

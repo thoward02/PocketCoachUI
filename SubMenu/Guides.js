@@ -7,24 +7,58 @@ class MenuBlock{
 
 
   constructor(Title){
-    this.Title          = Title;
+    this.Title            = Title;
 
+    this.Elem             = document.createElement("div");
 
-    this.Elem           = document.createElement("div");
-    this.Elem.innerHTML = this.Title;
+    this.Picture          = document.createElement("img");
+    this.Header           = document.createElement("div");
+    this.Description      = document.createElement("div");
 
+    this.Header.innerHTML = this.Title;
+    this.Picture.src      = "./Resources/OWMaps/Hanamura.jfif"
+
+    //Append
+    this.Elem.appendChild(this.Picture);
+    this.Elem.appendChild(this.Header);
+    this.Elem.appendChild(this.Description);
 
 
     this.Style();
   }
 
     Style(){
-      //When first build, set the display to hidden
-      this.Elem.style.display    = "block";
-      this.Elem.style.fontFamily = "Montserrat";
-      this.Elem.style.fontWeight = "500";
-      this.Elem.style.color      = "#D5FFF9";
-      this.Elem.style.textAlign  = "center";
+      //Setup elems
+      this.Elem.style.height      = "10%";
+      this.Elem.style.width       = "80%";
+      this.Elem.style.marginLeft  = "10%";
+      this.Elem.style.marginTop   = "10%";
+
+      this.Elem.style.display     = "block";
+      this.Elem.style.textAlign   = "center";
+      this.Elem.style.overflowY   = "hidden";
+      this.Elem.style.border      = "none";
+
+      this.Elem.style.fontFamily  = "Montserrat";
+      this.Elem.style.fontWeight  = "500";
+
+      this.Elem.style.color       = "#D5FFF9";
+    //  this.Elem.style.background  = "linear-gradient(to right, rgba(63, 30, 97, 1), rgba(86, 168, 160, 0.1))";
+
+      this.Elem.style.borderRadius = "20px";
+
+      //Setup picture
+      this.Picture.style.width      = "30%";
+      this.Picture.style.height     = "100%";
+
+      this.Picture.style.float      = "left";
+      this.Picture.style.margin     = "0";
+      this.Picture.style.padding    = "0";
+
+
+      //Setup Header
+      this.Header.style.textAlign   = "left";
+      this.Header.style.marginLeft  = "32%";
 
 
     }

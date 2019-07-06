@@ -54,7 +54,7 @@ window.OpenProfile  = function(){
   ProfilePicture.id      = "ProfilePicture";
 
   let Picture            = document.createElement("img");
-  Picture.src            = "https://i.groupme.com/1024x1024.jpeg.8b2eb37bbaed48698e663f78206dc38d.preview";
+  Picture.src            = "https://i.groupme.com/1024x1024.jpeg.8b2eb37bbaed48698e663f78206dc38d";
   Picture.id             = "ProfilePicture-Image";
 
   let UserInfo           = document.createElement("div");

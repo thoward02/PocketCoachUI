@@ -49,7 +49,8 @@ class MenuButton{
       //When first build, set the display to hidden
       this.Elem.style.display  = "none";
       this.Elem.style.fontFamily = "Montserrat";
-      this.Elem.style.fontStyle = "Medium";
+      this.Elem.style.fontWeight = "500";
+      this.Elem.style.color = "#bfe9f2";
 
     }
 

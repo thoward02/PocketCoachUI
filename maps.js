@@ -30,7 +30,7 @@ window.Data = {
 
           },
           "ControlPoint" : {
-            "Description" : "Control point is akin to King of the Hill, where two teams battle to ",
+            "Description" : "Control point is akin to King of the Hill, where two teams battle to control the center point. First team to win 2 out of the three maps wins the game.",
             "Maps" : {
               "Busan" : "/Api/Guides/Maps/Busan",
               "Ilios" : "/Api/Guides/Maps/Ilios",
@@ -41,7 +41,7 @@ window.Data = {
 
           },
           "2CP"          : {
-            "Description" : "",
+            "Description" : "2 CP is where teams must defend or attack two control points. If the attacking team manages to take the first point, the defending team must rotate back to the second point and defend.",
             "Maps" : {
               "Horizon_Lunar_Colony" : "/Api/Guides/Maps/Horizon_Lunar_Colony",
               "Paris" : "/Api/Guides/Maps/Paris",

@@ -13,6 +13,8 @@ class MenuBlock{
     this.Elem           = document.createElement("div");
     this.Elem.innerHTML = this.Title;
 
+
+
     this.Style();
   }
 

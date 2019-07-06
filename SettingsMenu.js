@@ -9,7 +9,7 @@ function BuildButtons(){
 }
 
 
-document.on("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){
 
   BuildButtons();
 

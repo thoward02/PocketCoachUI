@@ -1,5 +1,4 @@
-
-window.maps = {
+window.Maps = {
 
     "Guides" : {
       "Maps"  : {

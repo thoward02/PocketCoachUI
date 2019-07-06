@@ -1,5 +1,5 @@
 //OwO is the new UwU
-//Page Loading
+//Page Loading1
 window.LoadGuides = function(){
   //Clear previous data
   document.getElementById("Title").innerHTML = "Guides";
@@ -11,7 +11,12 @@ window.LoadGuides = function(){
 
   //Start adding new data into view
   let GuideData = window.Maps.Guides;
-  console.log(GuideData);
+
+  for(var items in GuideData){
+
+  }
+
+
 
 
 }
@@ -43,6 +48,8 @@ class MenuButton{
     Style(){
       //When first build, set the display to hidden
       this.Elem.style.display  = "none";
+      this.Elem.style.fontFamily = "Montserrat";
+      this.Elem.style.fontStyle = "Medium";
 
     }
 

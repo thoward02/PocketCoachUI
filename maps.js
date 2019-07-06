@@ -4,16 +4,21 @@ window.Data = {
       "Maps"  : {
         "Path"     : "/Api/Guides/Maps",
         "MapTypes" : {
-          "Hybrid"   : {
+          "Hybrid"       : {
+            "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
+
             "Maps"   : {
               "Blizzard_World" : "/Api/Guides/Maps/Blizzard_World",
               "Eichenwalde" : "/Api/Guides/Maps/Eichenwalde",
               "Hollywood" : "/Api/Guides/Maps/Hollywood",
               "Kings_Row" : "/Api/Guides/Maps/Kings_Row",
               "Numbani" : "/Api/Guides/Maps/Numbani"
+
             }
           },
-          "Payload"  : {
+          "Payload"      : {
+            "Description" : "Payload is all about pushing the cart from one end of the map to the other, by pushing it to three points. Players must either push the payload or stop other players from doing the same.",
+
             "Maps"   : {
               "Dorado" : "/Api/Guides/Maps/Dorado",
               "Havana" : "/Api/Guides/Maps/Havana",
@@ -24,15 +29,8 @@ window.Data = {
             }
 
           },
-          "2CP"      : {
-            "Maps" : {
-              "Horizon_Lunar_Colony" : "/Api/Guides/Maps/Horizon_Lunar_Colony",
-              "Paris" : "/Api/Guides/Maps/Paris",
-              "Temple_of_Anubis" : "/Api/Guides/Maps/Temple_of_Anubis",
-              "Volskaya_Industries" : "/Api/Guides/Maps/Volskaya_Industries"
-            }
-          },
-          "CP"       : {
+          "ControlPoint" : {
+            "Description" : "Control point is akin to King of the Hill, where two teams battle to ",
             "Maps" : {
               "Busan" : "/Api/Guides/Maps/Busan",
               "Ilios" : "/Api/Guides/Maps/Ilios",
@@ -41,6 +39,15 @@ window.Data = {
               "Oasis" : "/Api/Guides/Maps/Oasis"
             }
 
+          },
+          "2CP"          : {
+            "Description" : "",
+            "Maps" : {
+              "Horizon_Lunar_Colony" : "/Api/Guides/Maps/Horizon_Lunar_Colony",
+              "Paris" : "/Api/Guides/Maps/Paris",
+              "Temple_of_Anubis" : "/Api/Guides/Maps/Temple_of_Anubis",
+              "Volskaya_Industries" : "/Api/Guides/Maps/Volskaya_Industries"
+            }
           }
 
         },

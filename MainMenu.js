@@ -4,9 +4,9 @@
 
 /**
 * TODO:
-*   ~~Make sub menu clickable, not main menu~~
-*   ~~Rewrite data~~
-*   Make menu title look nice (spacing)
+*   Fix dissapearing menu bug, comes from resize
+*   Write specific map // hero data
+*   Add more profile data
 **/
 
 //Build leftside menu

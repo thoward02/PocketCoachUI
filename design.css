@@ -25,6 +25,21 @@
   font-size: 40px;
 }
 
+  .SubMenu{
+
+    padding-left: 4%;
+    padding-top: 2%;
+
+    font-family: Montserrat;
+    font-weight: 200;
+
+    color: #bfe9f2;
+
+
+
+  }
+
+
 #RightSide{
   position: absolute;
 

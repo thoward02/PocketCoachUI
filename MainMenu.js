@@ -1,5 +1,14 @@
 //OwO is the new UwU
 //Page Loading1
+
+
+/**
+* TODO:
+*   Make sub menu clickable, not main menu
+*   Rewrite data
+*   Make menu title look nice (spacing)
+**/
+
 window.LoadGuides = function(){
   //Clear previous data
   document.getElementById("Title").innerHTML = "Guides";
@@ -93,6 +102,13 @@ function BuildMenu(){
     Block.Elem.onclick = window.Menu[item].Funct;
     window.Menu[item].Class = Block;
 
+    for(var blocks in window.Data[item]){
+      let SubMenuElem = document.createElement("div");
+      SubMenuElem.innerHTML = blocks;
+      SubMenuElem.className = "SubMenu"
+      Block.Elem.appendChild(SubMenuElem);
+    }
+
 
     //Append item
     AppMenu.appendChild(Block.Elem);
@@ -105,7 +121,7 @@ function BuildMenu(){
       }
 
       Block.Elem.style.width =  "80%";
-      Block.Elem.style.height = "10%";
+      Block.Elem.style.marginTop = "5%";
 
     }).observe(document.getElementById("LeftSide"));
 

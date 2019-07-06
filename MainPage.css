@@ -81,6 +81,15 @@
   }
 
   #MenuTitle {
+
+    padding-top: 5%;
+    text-align: center;
+
     font-family: Montserrat;
-    font-style: italic;
+    font-weight: 200;
+    font-size: 60px;
+
+    color: #bfe9f2;
+
+
   }

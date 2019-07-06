@@ -1,4 +1,4 @@
-window.Maps = {
+window.Data = {
 
     "Guides" : {
       "Maps"  : {
@@ -115,12 +115,12 @@ window.Maps = {
       }
     },
 
-    "CoachingData" : {
-      "CoachingRequests" : {
+    "Coaching" : {
+      "Requests" : {
         "Path" : "/Api/Coaching/Requests"
       },
 
-      "CoachingVods" : {
+      "Vods" : {
         "Path" : "/Api/Coaching/Vods"
       }
 

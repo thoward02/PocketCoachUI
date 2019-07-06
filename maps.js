@@ -4,9 +4,7 @@ window.Data = {
       "Maps"  : {
         "Path"     : "/Api/Guides/Maps",
         "MapTypes" : {
-          "Path" : "/Api/Guides/Maps/MapTypes",
           "Hybrid"   : {
-            "Path"   : "/Api/Guides/Maps/MapTypes/Hybrid",
             "Maps"   : {
               "Blizzard_World" : "/Api/Guides/Maps/Blizzard_World",
               "Eichenwalde" : "/Api/Guides/Maps/Eichenwalde",
@@ -16,7 +14,6 @@ window.Data = {
             }
           },
           "Payload"  : {
-            "Path"   : "/Api/Guides/Maps/MapTypes/Payload",
             "Maps"   : {
               "Dorado" : "/Api/Guides/Maps/Dorado",
               "Havana" : "/Api/Guides/Maps/Havana",
@@ -28,7 +25,6 @@ window.Data = {
 
           },
           "2CP"      : {
-            "Path"   : "/Api/Guides/Maps/MapTypes/2CP",
             "Maps" : {
               "Horizon_Lunar_Colony" : "/Api/Guides/Maps/Horizon_Lunar_Colony",
               "Paris" : "/Api/Guides/Maps/Paris",
@@ -37,7 +33,6 @@ window.Data = {
             }
           },
           "CP"       : {
-            "Path"   : "/Api/Guides/Maps/MapTypes/CP",
             "Maps" : {
               "Busan" : "/Api/Guides/Maps/Busan",
               "Ilios" : "/Api/Guides/Maps/Ilios",
@@ -50,7 +45,6 @@ window.Data = {
 
         },
         "MapList" : {
-          "Path" : "/Api/Guides/Maps/",
           "Maps" :  {
             "Blizzard_World" : "/Api/Guides/Maps/Blizzard_World",
             "Eichenwalde" : "/Api/Guides/Maps/Eichenwalde",
@@ -78,7 +72,6 @@ window.Data = {
       },
 
       "Heroes"    : {
-        "Path" : "/Api/Guides/Heroes",
         "HeroTypes" : {
           "Dps"         : {},
           "MainSupport" : {},
@@ -90,7 +83,6 @@ window.Data = {
       },
 
       "TeamComps" : {
-        "Path"      : "/Api/Guides/TeamComps/",
         "Comps"     : {
           "222"       : {},
           "3-3"       : {},
@@ -102,37 +94,34 @@ window.Data = {
 
     "Quizzes" : {
       "Easy"   : {
-        "Path" : "/Api/Quizzes/Easy/",
         "Content" : {}
       },
       "Medium" : {
-        "Path" : "/Api/Quizzes/Medium/",
         "Content" : {}
       },
       "Hard"   : {
-        "Path" : "/Api/Quizzes/Hard/",
         "Content" : {}
       }
     },
 
     "Coaching" : {
       "Requests" : {
-        "Path" : "/Api/Coaching/Requests"
+
       },
 
       "Vods" : {
-        "Path" : "/Api/Coaching/Vods"
+
       }
 
     },
 
     "OWLVods" : {
-      "Path" : "/Api/OWL/",
+
       "RawVod" : {
-        "Path" : "/Api/OWL/OwlVods"
+
       },
       "CommentatedVod" : {
-        "Path" : "/Api/OWL/CommentedOWLVod"
+
       }
     }
 

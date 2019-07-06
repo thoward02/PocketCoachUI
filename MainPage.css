@@ -76,20 +76,22 @@
   }
 
   #AppMenu {
+
     padding-left: 4%;
-    margin-top: 26%;
+    margin-top: 10%;
+
   }
 
   #MenuTitle {
 
-    padding-top: 5%;
+    padding-top: 8%;
     text-align: center;
 
     font-family: Montserrat;
     font-weight: 200;
     font-size: 60px;
 
-    color: #bfe9f2;
+    color: #D5FFF9;
 
 
   }

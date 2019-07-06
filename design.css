@@ -33,12 +33,31 @@
     font-family: Montserrat;
     font-weight: 200;
 
-    color: #bfe9f2;
+    color: #D5FFF9;
 
+  }
+
+
+
+  #SettingsMenu{
+    bottom: 2%;
+    position: fixed;
+
+    width: 60%;
+    height: 8%;
 
 
   }
 
+    #SettingsMenu-Logout, #SettingsMenu-SettingsMenu, #SettingsMenu-Profile{
+      border-color: white;
+      border: 5px;
+
+      width: 33%;
+      height: 100%;
+
+      float: left;
+    }
 
 #RightSide{
   position: absolute;

@@ -11,31 +11,31 @@ window.Data = {
             "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
             "Maps"   : {
               "Blizzard_World" : {
-                "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
-                "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
+                "Description" : "A hybrid game mode map set within a fake Blizzard theme park, hosting elements from other blizzard games.",
+                "Image" : "https://vignette.wikia.nocookie.net/overwatch/images/8/8d/Overwatch_BlizzardWorld_000_png_jpgcopy.jpg/revision/latest?cb=20171103212134",
               },
               "Eichenwalde" : {
-                "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
-                "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
+                "Description" : "A hybrid game mode map set within an old German castle, once defended by Reinhardt himself",
+                "Image" : "https://www.owfire.com/images/maps/eichenwalde-1.jpg",
               },
               "Hollywood" : {
-                "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
-                "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
+                "Description" : "A hybrid game mode map set in Hollywood, USA.",
+                "Image" : "https://www.owfire.com/images/maps/hollywood-1.jpg",
               },
               "Kings_Row" : {
-                "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
+                "Description" : "A hybrid game mode map set in the late future of London, where Omnics fight daily for their rights.",
                 "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
 
               },
               "Numbani" : {
-                "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
-                "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "https://www.owfire.com/images/maps/numbani-1.jpg",
               }
 
             }
           },
           "Payload"      : {
-            "Description" : "Payload is all about pushing the cart from one end of the map to the other, by pushing it to three points. Players must either push the payload or stop other players from doing the same.",
+            "Description" : "Payload is all about pushing the cart from one end of the map to the other, by pushing it to three points. Players must either push the payload or stop other players from doing so.",
             "Image" : "https://www.owfire.com/images/maps/route-66-1.jpg",
             "Maps"   : {
               "Dorado" : "/Api/Guides/Maps/Dorado",
@@ -48,7 +48,7 @@ window.Data = {
 
           },
           "ControlPoint" : {
-            "Description" : "Control point is akin to King of the Hill, where two teams battle to control the center point. First team to win 2 out of the three maps wins the game.",
+            "Description" : "Control point is akin to King of the Hill, where two teams battle to control the center point. The first team to win 2 out of the three maps wins the game.",
             "Image" : "https://gamepedia.cursecdn.com/overwatch_gamepedia/thumb/f/f3/Nepal_loading_screen.jpg/1200px-Nepal_loading_screen.jpg",
             "Maps" : {
               "Busan" : "/Api/Guides/Maps/Busan",
@@ -74,13 +74,13 @@ window.Data = {
         "MapList" : {
           "Maps" :  {
             "Blizzard_World" : {
-              "Description" : "",
-              "Image" : "",
+              "Description" : "Ovo",
+              "Image" : "https://pmcvariety.files.wordpress.com/2018/11/world-of-warcraft-classic.png?w=1000&h=563&crop=1",
               "GuideData" : {
-                "Header" : "",
-                "body"   : {
-                  "Header" : "",
-                  "Text"   : ""
+                "Header" : "Test Head",
+                "Body"   : {
+                  "Header" : "Head 1",
+                  "Text"   : "Test Text"
                 }
               }
             },
@@ -89,7 +89,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -100,7 +100,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -111,7 +111,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -122,7 +122,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -133,7 +133,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -144,7 +144,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -155,7 +155,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -166,7 +166,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -177,7 +177,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -188,7 +188,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -199,7 +199,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -210,7 +210,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -221,7 +221,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -232,7 +232,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -243,7 +243,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -254,7 +254,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -265,7 +265,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -276,7 +276,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -287,7 +287,7 @@ window.Data = {
               "Image" : "",
               "GuideData" : {
                 "Header" : "",
-                "body"   : {
+                "Body"   : {
                   "Header" : "",
                   "Text"   : ""
                 }
@@ -305,7 +305,7 @@ window.Data = {
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png",
           },
           "MainSupport" : {
-            "Description" : "Main supports are your healers in charge of keeping the entire team alive",
+            "Description" : "Main supports are your healers, in charge of keeping the entire team alive",
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png",
           },
           "OffSupport"  : {
@@ -317,7 +317,7 @@ window.Data = {
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/icon-portrait.png",
           },
           "OffTank"     : {
-            "Description" : "Off tanks keep the team alive through peels, and provides support to the Main Tank in taking space",
+            "Description" : "Off tanks keep the team alive through peels, and provide support to the Main Tank in taking space",
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/icon-portrait.png",
           }
         },
@@ -336,13 +336,13 @@ window.Data = {
             "GuideData" : {}
           },
           "3-3"       : {
-            "Description" : "Three Three is a comp type involving 3 tanks and 3 healers, with the most prominant form being known as GOATs.",
+            "Description" : "Three Three is a comp type involving 3 tanks and 3 healers, with the most prominant form known as GOATs.",
             "Image" : "",
             "GuideData" : {}
 
           },
           "OffMeta"   : {
-            "Description" : "This category is for what could be consider as off meta, or cheese comps",
+            "Description" : "This category is for what could be considered as off meta, or cheese comps",
             "Image" : "",
             "GuideData" : {}
           }
@@ -363,7 +363,7 @@ window.Data = {
         "Content" : {}
       },
       "Hard"   : {
-        "Description" : "These are harder quzzies that high level players should be able to get right",
+        "Description" : "These are harder quizzes that high level players should be able to get right",
         "Image" : "",
         "Content" : {}
       }

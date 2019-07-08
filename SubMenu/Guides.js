@@ -10,10 +10,14 @@ class MenuBlock{
     this.DescText              = DataBlock.Description;
     this.ImageSrc              = DataBlock.Image
 
+    let TitleText = this.Title.replace(/_/g, " ");
+    this.Title = TitleText;
+
     //Modify text
     let NewText = "";
     for(var x = 0; x < 68; x++){
-      NewText += this.DescText[x];
+      if(this.DescText[x] != null)
+        NewText += this.DescText[x];
     }
     NewText += " . . .";
 
@@ -25,6 +29,7 @@ class MenuBlock{
     this.Header                = document.createElement("div");
     this.Description           = document.createElement("div");
 
+    this.Elem.id               = this.Title;
     this.Header.innerHTML      = this.Title;
     this.Description.innerHTML = this.DescText;
     this.Picture.src           = this.ImageSrc;
@@ -54,7 +59,7 @@ class MenuBlock{
       this.Elem.style.fontWeight  = "500";
 
       this.Elem.style.color       = "#D5FFF9";
-    //  this.Elem.style.background  = "linear-gradient(to right, rgba(63, 30, 97, 1), rgba(86, 168, 160, 0.1))";
+      //this.Elem.style.background  = "linear-gradient(to right, rgba(63, 30, 97, 1), rgba(86, 168, 160, 0.1))";
 
       this.Elem.style.borderRadius = "20px";
 
@@ -81,6 +86,26 @@ class MenuBlock{
     }
 }
 
+class PageBlock{
+
+  constructor(Title, DataBlock){
+
+    this.Title                 = Title;
+    this.DescText              = DataBlock.Description;
+    let TitleText = this.Title.replace(/_/g, " ");
+    this.Title = TitleText;
+
+      this.Elem                  = document.createElement("div");
+  }
+
+
+  Style(){
+
+
+  }
+
+
+}
 
 //Load Guides
 window.LoadMaps = function(){
@@ -90,25 +115,20 @@ window.LoadMaps = function(){
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
-          "Funct" : window.LoadMapPage("Blizzard_World"),
-          "Class" : null
+
         },
         "Eichenwalde" : {
-          "Funct" : window.LoadMapPage("Eichenwalde"),
-          "Class" : null
+
         },
         "Hollywood" : {
-          "Funct" : window.LoadMapPage("Hollywood"),
-          "Class" : null
+
         },
         "Kings_Row" : {
-          "Funct" : window.LoadMapPage("Kings_Row"),
-          "Class" : null
+
 
         },
         "Numbani" : {
-          "Funct" : window.LoadMapPage("Numbani"),
-          "Class" : null
+
         }
 
       }
@@ -118,25 +138,19 @@ window.LoadMaps = function(){
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
-          "Funct" : window.LoadMapPage("Blizzard_World"),
-          "Class" : null
+
         },
         "Eichenwalde" : {
-          "Funct" : window.LoadMapPage("Eichenwalde"),
-          "Class" : null
+
         },
         "Hollywood" : {
-          "Funct" : window.LoadMapPage("Hollywood"),
-          "Class" : null
+
         },
         "Kings_Row" : {
-          "Funct" : window.LoadMapPage("Kings_Row"),
-          "Class" : null
 
         },
         "Numbani" : {
-          "Funct" : window.LoadMapPage("Numbani"),
-          "Class" : null
+
         }
 
       }
@@ -146,25 +160,20 @@ window.LoadMaps = function(){
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
-          "Funct" : window.LoadMapPage("Blizzard_World"),
-          "Class" : null
+
+
         },
         "Eichenwalde" : {
-          "Funct" : window.LoadMapPage("Eichenwalde"),
+
           "Class" : null
         },
         "Hollywood" : {
-          "Funct" : window.LoadMapPage("Hollywood"),
-          "Class" : null
         },
         "Kings_Row" : {
-          "Funct" : window.LoadMapPage("Kings_Row"),
-          "Class" : null
 
         },
         "Numbani" : {
-          "Funct" : window.LoadMapPage("Numbani"),
-          "Class" : null
+
         }
 
       }
@@ -174,25 +183,20 @@ window.LoadMaps = function(){
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
-          "Funct" : window.LoadMapPage("Blizzard_World"),
-          "Class" : null
+
         },
         "Eichenwalde" : {
-          "Funct" : window.LoadMapPage("Eichenwalde"),
-          "Class" : null
+
         },
         "Hollywood" : {
-          "Funct" : window.LoadMapPage("Hollywood"),
-          "Class" : null
+
         },
         "Kings_Row" : {
-          "Funct" : window.LoadMapPage("Kings_Row"),
-          "Class" : null
+
 
         },
         "Numbani" : {
-          "Funct" : window.LoadMapPage("Numbani"),
-          "Class" : null
+
         }
 
       }
@@ -226,6 +230,16 @@ window.LoadMaps = function(){
 
 window.LoadHeroes = function(){
 
+  window.HeroTypeData = {
+    "DPS" : {},
+    "MainSupport" : {},
+    "OffSupport" : {},
+    "MainTank" : {},
+    "OffTank" : {},
+
+
+  }
+
   document.getElementById("Title").innerHTML = "Heroes";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
@@ -258,21 +272,22 @@ window.LoadTeamComps = function(){
 
 
 
-//MAP TYPE LOADS
 
+//LOAD Sub menus
+
+// -------------- MAP TYPES ---------------- //
 window.LoadHybrid   = function(){
   document.getElementById("Title").innerHTML = "Hybrid";
   document.getElementById("DataHolder").innerHTML = "";
 
   let HybridData = window.Data.Guides.Maps.MapTypes.Hybrid.Maps;
 
+
   for(var items in HybridData) {
-    let Block = new MenuBlock(items, HybridData[items]);;
-    Block.Elem.addEventListener("click", function(){
+    window.localStorage.setItem("Button", 0);
+    let Block = new MenuBlock(items, HybridData[items]);
 
-      
-
-    })
+    Block.Elem.onclick = function(x){window.LoadMapPage(x.path[1].id)}
 
     document.getElementById("DataHolder").appendChild(Block.Elem);
 
@@ -328,19 +343,52 @@ window.Load2CP      = function(){
 
 }
 
+// ----------------------------------------- //
+
+
+// -------------- HERO TYPES ----------------//
+
+window.LoadDPS      = function(){
+
+}
+// ----------------------------------------- //
+
+
+
+
+//LOAD PAGES
 window.LoadMapPage  = function(Map){
-    console.log(Map);
   //BUILD PAGE BASED OFF OF MAP PARAM
   // MAP -> maps.js -> maps.Guides.Maps.MapList.Maps[Map]
   //Will return the guide, we'll build the guide here
+
+
+  //To ensure that only map data is built
+  if(Map != "DataHolder"){
+    //Reformat Map -- New map will hold the data related map name; Ex: "Blizzard_World"
+    let NewMap = "";
+    for(var items in Map){
+      if(Map[items] == " ") NewMap += "_";
+      else NewMap += Map[items];
+    }
+
+
+    //Set page title
+    document.getElementById("Title").innerHTML = Map;
+
+    //Wipe data holder
+    document.getElementById("DataHolder").innerHTML = "";
+
+    let MapPageData = window.Data.Guides.Maps.MapList.Maps[NewMap];
+
+    //Create wiki page
+    let Page = new PageBlock(Map, MapPageData);
+
+
+
+  }
+
 }
-
-
-//HERO TYPE LOAD
-
-
-
-
 
 //TEAM COMP TYPE LOAD
 

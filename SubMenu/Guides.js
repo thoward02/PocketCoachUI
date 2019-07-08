@@ -95,11 +95,59 @@ class PageBlock{
     let TitleText = this.Title.replace(/_/g, " ");
     this.Title = TitleText;
 
-      this.Elem                  = document.createElement("div");
+    this.Elem                  = document.createElement("div");
+    this.Header                = document.createElement("div");
+    this.Description           = document.createElement("div");
+    this.Body                  = document.createElement("div");
+    this.SubHead               = document.createElement("div");
+    this.SubText               = document.createElement("div");
+
+    this.Elem.id               = this.Title;
+    this.Header.innerHTML      = this.Title;
+    this.Description.innerHTML = this.DescText;
+
+
+
+    this.Elem.appendChild(this.Header);
+    this.Elem.appendChild(this.Description);
+    this.Elem.appendChild(this.Body);
+    this.Body.appendChild(this.SubHead);
+    this.Body.appendChild(this.SubText);
+
+    this.Style();
+
   }
 
 
   Style(){
+
+    this.Elem.style.width = "80%";
+    this.Elem.style.height = "100%";
+    this.Elem.style.marginLeft  = "10%";
+    this.Elem.style.marginTop   = "10%";
+    this.Elem.padding = "5%";
+
+    this.Elem.style.backgroundColor = "#5e1d75";
+
+    this.Elem.style.fontFamily  = "Montserrat";
+    this.Elem.style.fontWeight  = "500";
+
+    this.Elem.style.display     = "block";
+    this.Elem.style.color       = "#D5FFF9";
+
+    this.Header.style.textAlign = "left";
+
+    this.Description.style.textAlign   = "left";
+    this.Description.style.fontWeight = "200";
+    this.Description.style.fontSize = "30px";
+    this.Description.style.marginLeft = "12%";
+
+    this.Body.style.textAlign   = "left";
+    this.Body.style.fontWeight = "200";
+    this.Body.style.fontSize = "30px";
+    //this.Body.style.marginLeft = "10%";
+
+    this.SubText.style.marginLeft = "12%";
 
 
   }
@@ -231,12 +279,21 @@ window.LoadMaps = function(){
 window.LoadHeroes = function(){
 
   window.HeroTypeData = {
-    "DPS" : {},
-    "MainSupport" : {},
-    "OffSupport" : {},
-    "MainTank" : {},
-    "OffTank" : {},
-
+    "DPS" : {
+      "Funct" : window.LoadDPS
+    },
+    "MainSupport" : {
+      "Funct" : window.LoadMainSupport
+    },
+    "OffSupport" : {
+      "Funct" : window.LoadOffSuport
+    },
+    "MainTank" : {
+      "Funct" : window.LoadMainTank
+    },
+    "OffTank" : {
+      "Funct" : window.LoadOffTank
+    },
 
   }
 
@@ -248,6 +305,10 @@ window.LoadHeroes = function(){
 
   for(var items in HeroData){
     let Block = new MenuBlock(items, HeroData[items]);
+
+    //Set up on click
+    Block.Elem.onclick = window.HeroTypeData[items].Funct;
+
     document.getElementById("DataHolder").appendChild(Block.Elem);
   }
 }
@@ -348,9 +409,53 @@ window.Load2CP      = function(){
 
 // -------------- HERO TYPES ----------------//
 
-window.LoadDPS      = function(){
+window.LoadDPS         = function(){
+  //Setup hero list
+  let HeroList = window.Data.Guides.Heroes.HeroTypes.DPS.Heroes;
+
+  //Clean up main page
+  document.getElementById("DataHolder").innerHTML = "";
+  document.getElementById("Title").innerHTML      = "DPS";
+
+  //Loop hero list
+  for(var items in HeroList){
+    //Set up vars
+    let HeroData = HeroList[items];
+    let Hero     = items;
+
+    //Create button for hero
+    let Block = new MenuBlock(Hero, HeroData);
+    Block.Elem.onclick = function(x){window.LoadHeroPage(x.path[1].id)}
+
+    //Append block
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+
+
+
+
+  }
 
 }
+
+window.LoadMainSupport = function(){
+
+
+}
+
+window.LoadOffSuport   = function(){
+
+}
+
+window.LoadMainTank    = function(){
+
+}
+
+window.LoadOffTank     = function(){
+
+}
+
+
+
 // ----------------------------------------- //
 
 
@@ -383,14 +488,29 @@ window.LoadMapPage  = function(Map){
 
     //Create wiki page
     let Page = new PageBlock(Map, MapPageData);
-
+    document.getElementById("DataHolder").appendChild(Page.Elem);
 
 
   }
 
 }
 
-//TEAM COMP TYPE LOAD
+//LOAD HERO PAGE
+window.LoadHeroPage  = function(Hero){
+  //To ensure that only hero data is built
+    //Set page title
+    document.getElementById("Title").innerHTML = Hero;
 
+    //Wipe data holder
+    document.getElementById("DataHolder").innerHTML = "";
+
+    let HeroListData = window.Data.Guides.Heroes.HeroList[Hero];
+
+    //Create wiki page
+    let Page = new PageBlock(Hero, HeroListData);
+    document.getElementById("DataHolder").appendChild(Page.Elem);
+
+
+}
 
 //i'm glad i wrote everything in 3 menus, it's like i planned this ovo

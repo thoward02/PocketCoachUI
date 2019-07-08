@@ -300,9 +300,75 @@ window.Data = {
 
       "Heroes"    : {
         "HeroTypes" : {
-          "Dps"          : {
+          "DPS"          : {
             "Description" : "These Heroes are the primary damage dealing heroes within Overwatch",
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png",
+            "Heroes" : {
+              "Ashe": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Bastion": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Doomfist": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Genji": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Hanzo": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Junkrat": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "McCree": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Mei": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Pharah": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Reaper": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Soldier:76": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Sombra": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Symmetra": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Torbjorn": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Tracer": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              },
+              "Widowmaker": {
+                "Description" : "THIS IS HERO TEST DATA lowercase",
+                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+              }
+            }
           },
           "MainSupport" : {
             "Description" : "Main supports are your healers, in charge of keeping the entire team alive",
@@ -323,7 +389,17 @@ window.Data = {
         },
         "HeroList"  : {
 
-
+          "Widowmaker" : {
+              "Description" : "SNIPER BOI",
+              "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/hero-select-portrait.png",
+              "GuideData" : {
+                "Header" : "HEADER 1",
+                "Body"   : {
+                  "Header" : "HEADER 2",
+                  "Text"   : "TEST TEXT UWU OWO"
+                }
+              }
+          }
 
         }
       },

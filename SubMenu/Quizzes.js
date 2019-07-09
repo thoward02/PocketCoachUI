@@ -1,101 +1,10 @@
-//Load Quizzes
-class MenuBlock{
+//Easy
+class QuizPageBlock{
 
   constructor(Title, DataBlock){
     this.Title                 = Title;
     this.DescText              = DataBlock.Description;
     this.ImageSrc              = DataBlock.Image;
-
-    let TitleText = this.Title.replace(/_/g, " ");
-    this.Title = TitleText;
-
-    //Modify text
-    let NewText = "";
-    for(var x = 0; x < 68; x++){
-      if(this.DescText[x] != null)
-        NewText += this.DescText[x];
-    }
-    NewText += " ...";
-
-    this.DescText = NewText;
-
-    this.Elem                  = document.createElement("div");
-    this.Picture               = document.createElement("img");
-    this.Header                = document.createElement("div");
-    this.Description           = document.createElement("div");
-
-    this.Elem.id               = this.Title;
-    this.Header.innerHTML      = this.Title;
-    this.Description.innerHTML = this.DescText;
-    this.Picture.src           = this.ImageSrc;
-
-    //Append
-    this.Elem.appendChild(this.Picture);
-    this.Elem.appendChild(this.Header);
-    this.Elem.appendChild(this.Description);
-
-
-    this.Style();
-  }
-
-    Style(){
-      //Setup elems
-      this.Elem.style.height      = "15%";
-      this.Elem.style.width       = "90%";
-      this.Elem.style.marginLeft  = "5%";
-      this.Elem.style.marginBottom= "5%";
-      this.Elem.style.marginTop   = "5%";
-
-      this.Elem.style.display     = "block";
-      this.Elem.style.textAlign   = "center";
-      this.Elem.style.overflowY   = "hidden";
-      this.Elem.style.border      = "none";
-
-      this.Elem.style.fontFamily  = "Montserrat";
-      this.Elem.style.fontWeight  = "500";
-
-      this.Elem.style.color       = "#D5FFF9";
-      this.Elem.style.backgroundColor = "rgba(0,0,0,0.3)";
-
-      this.Elem.style.borderRadius = "20px";
-
-      //Setup picture
-      this.Picture.style.width      = "30%";
-      this.Picture.style.height     = "100%";
-
-      this.Picture.style.float      = "left";
-      this.Picture.style.margin     = "0";
-      this.Picture.style.padding    = "0";
-
-
-      //Setup Header
-      this.Header.style.textAlign   = "left";
-      this.Header.style.marginTop   = "2.8%";
-      this.Header.style.marginBottom   = "1%";
-      this.Header.style.marginLeft  = "32%";
-      this.Header.style.fontSize = "45px";
-
-      //Setup Description
-      this.Description.style.textAlign   = "left";
-      this.Description.style.fontWeight = "200";
-      this.Description.style.fontSize = "30px";
-
-      this.Description.style.marginLeft   = "32%";
-      this.Description.style.marginRight  = "2%";
-
-    }
-}
-
-
-class PageBlock{
-
-  constructor(Title, DataBlock){
-    this.Title                 = Title;
-    this.DescText              = DataBlock.Description;
-    this.ImageSrc              = DataBlock.Image;
-
-    let TitleText              = this.Title.replace(/_/g, " ");
-    this.Title                 = TitleText;
 
     this.Elem                  = document.createElement("div");
     this.Picture               = document.createElement("img");
@@ -120,7 +29,7 @@ class PageBlock{
 
     for(var items in DataBlock.GuideData.Body) {
       //Set up vars
-      let Type = DataBlock.GuideData.Body[items][0];
+      let Type = DataBlock.Content.Body[items][0];
       let Text = DataBlock.GuideData.Body[items][1];
 
 
@@ -268,21 +177,62 @@ class PageBlock{
 
     this.SubText.style.marginLeft = "2%";
 
+
+
+
   }
 }
 
+
 window.LoadEasy = function(){
+
   document.getElementById("Title").innerHTML = "Easy";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
+
+  let EasyData = window.Data.Quizzes.Easy;
+
+  for(var items in EasyData) {
+    let Block = new MenuBlock(items, EasyData[items]);
+    Block.Elem.onclick = function(x){window.LoadQuizPage(x.path[1].id)}
+
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+  }
+
 }
+
+//Medium
 window.LoadMedium = function(){
   document.getElementById("Title").innerHTML = "Medium";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
+
+  let MediumData = window.Data.Quizzes.Medium;
+
+  for(var items in MediumData) {
+    let Block = new MenuBlock(items, MediumData[items]);
+    Block.Elem.onclick = function(x){window.LoadQuizPage(x.path[1].id)}
+
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+  }
 }
+
+//Hard
 window.LoadHard = function(){
   document.getElementById("Title").innerHTML = "Hard";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
+
+  let HardData = window.Data.Quizzes.Hard;
+
+  for(var items in HardData) {
+    let Block = new MenuBlock(items, HardData[items]);
+    Block.Elem.onclick = function(x){window.LoadQuizPage(x.path[1].id)}
+
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+  }
+}
+
+window.LoadQuizPage = function(Quiz){
+  console.log(Quiz);
 }

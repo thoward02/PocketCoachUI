@@ -354,6 +354,55 @@ window.Data = {
 
       "Heroes"    : {
         "HeroTypes" : {
+          "MainSupport" : {
+            "Description" : "Main supports are your healers, in charge of keeping the entire team alive",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png",
+            "Heroes" : {
+
+                "Ana" : {
+                  "Description": "Ana is a long ranged support with ADS capability, with high single target healing capability, and an ult that can save a teammates life mid fight",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+                },
+                "Baptiste" : {
+                  "Description": "Baptiste is a long range AOE healer, with ease access to the high ground and a 16 second death denying ability",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/baptiste/icon-portrait.png"
+                },
+                "Brigitte" : {
+                  "Description": "Brig is a melee only passive AOE healer, specializing in giving Armour packs to her teammates during combat, and providing general defense against flankers",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/icon-portrait.png"
+                },
+                "Lucio" : {
+                  "Description": "Lucio is a passive AOE healer, who can increase the speed of his teammates and provide a large shield buff through his ult for a short time.",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/icon-portrait.png"
+                },
+                "Mercy" : {
+                  "Description": "Mercy is a single target healer, who can switch between healing and damage boosting, making her perfect for pocketing DPS so that they may exert more pressure",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/mercy/icon-portrait.png"
+                },
+                "Moira" : {
+                  "Description": "Moira is a AOE healer who has a large HPS but low healing resources, along with a fast charging AOE healing ult",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/moira/icon-portrait.png"
+                },
+                "Zenyatta" : {
+                  "Description": "Zenyatta provides single target healing, and single target damage amplification through his discord, along with an anti wipe ultimate",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/zenyatta/icon-portrait.png"
+                }
+
+
+            }
+          },
+          "OffSupport"  : {
+            "Description" : "Offsupports exist to keep the main healer alive, and provide utility to the team",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/icon-portrait.png",
+          } ,
+          "MainTank"    : {
+            "Description" : "Main tanks take space for the team and provide a front line for the team to stand behind",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/icon-portrait.png",
+          },
+          "OffTank"     : {
+            "Description" : "Off tanks keep the team alive through peels, and provide support to the Main Tank in taking space",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/icon-portrait.png",
+          },
           "DPS"          : {
             "Description" : "These Heroes are the primary damage dealing heroes within Overwatch",
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png",
@@ -423,35 +472,20 @@ window.Data = {
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/icon-portrait.png"
                 }
               }
-          },
-          "MainSupport" : {
-            "Description" : "Main supports are your healers, in charge of keeping the entire team alive",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png",
-          },
-          "OffSupport"  : {
-            "Description" : "Offsupports exist to keep the main healer alive, and provide utility to the team",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/icon-portrait.png",
-          } ,
-          "MainTank"    : {
-            "Description" : "Main tanks take space for the team and provide a front line for the team to stand behind",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/icon-portrait.png",
-          },
-          "OffTank"     : {
-            "Description" : "Off tanks keep the team alive through peels, and provide support to the Main Tank in taking space",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/icon-portrait.png",
           }
         },
         "HeroList"  : {
 
-          "Widowmaker" : {
-              "Description" : "SNIPER BOI",
-              "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/hero-select-portrait.png",
+          "Ana" : {
+              "Description" : "Ana is a long range support character, who provides single target healing from the backline.",
+              "Image" : "./Resources/Heroes/ana.png",
               "GuideData" : {
-                "Header" : "HEADER 1",
-                "Body"   : {
-                  "Header" : "HEADER 2",
-                  "Text"   : "TEST TEXT UWU OWO"
-                }
+                "Header" : "",
+                "Body"   : [
+                  ["Header" , "KIT"],
+                  ["Text"   , "Primary Fire - bang"]
+                ]
+
               }
           }
 
@@ -543,19 +577,55 @@ window.Data = {
 
     "Quizzes" : {
       "Easy"   : {
-        "Description" : "These are the easier quizzes that lower ranked players should be able to get right",
+        /*"Description" : "These are the easier quizzes that lower ranked players should be able to get right",
         "Image" : "",
-        "Content" : {}
+        "Content" : {}, */
+        "Quiz 1" : {
+          "Description" : "quizzzz the first",
+          "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+          "Content" : {
+            "Video" : "",
+            "Answer1" : ""
+          }
+        },
+        "Quiz 2" : {
+          "Description" : "quizzzz the second",
+          "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+          "Content" : {}
+        },
+        "Quiz 3" : {
+          "Description" : "quizzzz the third",
+          "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+          "Content" : {}
+        }
       },
       "Medium" : {
-        "Description" : "These are medium ranked quizzes that mid tier players should be able to get right",
+        /*"Description" : "These are medium ranked quizzes that mid tier players should be able to get right",
         "Image" : "",
-        "Content" : {}
+        "Content" : {} */
+        "Quiz 1" : {
+
+        },
+        "Quiz 2" : {
+
+        },
+        "Quiz 3" : {
+
+        }
       },
       "Hard"   : {
-        "Description" : "These are harder quizzes that high level players should be able to get right",
+        /*"Description" : "These are harder quizzes that high level players should be able to get right",
         "Image" : "",
-        "Content" : {}
+        "Content" : {}*/
+        "Quiz 1" : {
+
+        },
+        "Quiz 2" : {
+
+        },
+        "Quiz 3" :  {
+
+        }
       }
     },
 

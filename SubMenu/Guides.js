@@ -599,7 +599,7 @@ window.LoadHeroes = function(){
     },
     "OffTank" : {
       "Funct" : window.LoadOffTank
-    },
+    }
 
   }
 
@@ -735,7 +735,6 @@ window.LoadPayload  = function(){
   document.getElementById("DataHolder").innerHTML = "";
 
   let PayloadData = window.Data.Guides.Maps.MapTypes.Payload.Maps;
-  console.log(PayloadData)
   for(var items in PayloadData) {
     let Block = new MenuBlock(items, PayloadData[items]);
     Block.Elem.onclick = function(x){window.LoadMapPage(x.path[1].id)}
@@ -745,7 +744,7 @@ window.LoadPayload  = function(){
   }
 }
 
-window.LoadCP       = function(){
+window.LoadCP      = function(){
 
   document.getElementById("Title").innerHTML = "CP";
   document.getElementById("DataHolder").innerHTML = "";
@@ -814,11 +813,11 @@ window.LoadDPS         = function(){
 
 window.LoadMainSupport = function(){
   //Setup hero list
-  let HeroList = window.Data.Guides.Heroes.HeroTypes.DPS.Heroes;
+  let HeroList = window.Data.Guides.Heroes.HeroTypes.MainSupport.Heroes;
 
   //Clean up main page
   document.getElementById("DataHolder").innerHTML = "";
-  document.getElementById("Title").innerHTML      = "DPS";
+  document.getElementById("Title").innerHTML      = "Main Support";
 
   //Loop hero list
   for(var items in HeroList){
@@ -871,7 +870,6 @@ window.LoadMapPage  = function(Map){
       if(Map[items] == " ") NewMap += "_";
       else NewMap += Map[items];
     }
-
     if(Map != "Blizzard World"){
 
       window.TossBetaError();
@@ -900,17 +898,24 @@ window.LoadMapPage  = function(Map){
 window.LoadHeroPage  = function(Hero){
   //To ensure that only hero data is built
     //Set page title
-    document.getElementById("Title").innerHTML = Hero;
+    if(Hero == "Ana" ){
 
-    //Wipe data holder
-    document.getElementById("DataHolder").innerHTML = "";
+      document.getElementById("Title").innerHTML = Hero;
 
-    let HeroListData = window.Data.Guides.Heroes.HeroList[Hero];
+      //Wipe data holder
+      document.getElementById("DataHolder").innerHTML = "";
 
-    //Create wiki page
-    let Page = new PageBlock(Hero, HeroListData);
-    document.getElementById("DataHolder").appendChild(Page.Elem);
+      let HeroListData = window.Data.Guides.Heroes.HeroList[Hero];
 
+      //Create wiki page
+      let Page = new PageBlock(Hero, HeroListData);
+      document.getElementById("DataHolder").appendChild(Page.Elem);
+
+    }
+
+    if(Hero != "Ana" && Hero!="DataHolder"){
+      window.TossBetaError();
+    }
 
 }
 

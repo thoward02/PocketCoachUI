@@ -8,7 +8,7 @@ class MenuBlock{
   constructor(Title, DataBlock){
     this.Title                 = Title;
     this.DescText              = DataBlock.Description;
-    this.ImageSrc              = DataBlock.Image
+    this.ImageSrc              = DataBlock.Image;
 
     let TitleText = this.Title.replace(/_/g, " ");
     this.Title = TitleText;
@@ -24,7 +24,6 @@ class MenuBlock{
     this.DescText = NewText;
 
     this.Elem                  = document.createElement("div");
-
     this.Picture               = document.createElement("img");
     this.Header                = document.createElement("div");
     this.Description           = document.createElement("div");
@@ -93,13 +92,15 @@ class PageBlock{
     this.Title                 = Title;
     this.DescText              = DataBlock.Description;
     this.ImageSrc              = DataBlock.Image;
-    let TitleText = this.Title.replace(/_/g, " ");
-    this.Title = TitleText;
+
+    let TitleText              = this.Title.replace(/_/g, " ");
+    this.Title                 = TitleText;
 
     this.Elem                  = document.createElement("div");
     this.Picture               = document.createElement("img");
-    this.Header                = document.createElement("div");
     this.Description           = document.createElement("div");
+    this.Header                = document.createElement("div");
+
     this.Body                  = document.createElement("div");
     this.SubHead               = document.createElement("div");
     this.SubText               = document.createElement("div");
@@ -109,7 +110,6 @@ class PageBlock{
     this.Description.innerHTML = this.DescText;
     this.Picture.src           = this.ImageSrc;
 
-
     this.Elem.appendChild(this.Picture);
     this.Elem.appendChild(this.Header);
     this.Elem.appendChild(this.Description);
@@ -117,6 +117,38 @@ class PageBlock{
     this.Body.appendChild(this.SubHead);
     this.Body.appendChild(this.SubText);
 
+
+    for(var items in DataBlock.GuideData.Body) {
+
+      //Handle Headers
+      if(items == "Header"){
+        //Create element
+        let Element = document.createElement("div");
+        Element.innerHTML = DataBlock.GuideData.Body.Header;
+
+        //style
+
+
+        //append
+        this.Elem.appendChild(Element);
+
+      }
+
+      //Handle Paragraphs
+      if(items == "Text"){
+        //Create element
+        let Element = document.createElement("div");
+        Element.innerHTML = DataBlock.GuideData.Body.Text;
+
+        //style
+
+
+        //append
+        this.Elem.appendChild(Element);
+      }
+
+
+    }
     this.Style();
 
   }
@@ -124,14 +156,12 @@ class PageBlock{
 
   Style(){
 
-    this.Elem.style.width = "80%";
-    this.Elem.style.height = "80%";
-    this.Elem.style.marginLeft = "10%";
-    this.Elem.style.marginRight = "10%";
-    this.Elem.style.marginTop = "10%";
+    this.Elem.style.width = "90%";
+    this.Elem.style.height = "90%";
+    this.Elem.style.marginLeft = "5%";
+    this.Elem.style.marginTop = "5%";
     this.Elem.style.marginBottom = "10%";
-    this.Elem.style.padding = "5%";
-    this.Elem.style.borderRadius = "20px";
+    this.Elem.style.borderRadius = "25px";
 
     this.Elem.style.backgroundColor = "#5e1d75";
 
@@ -141,21 +171,35 @@ class PageBlock{
     this.Elem.style.display     = "block";
     this.Elem.style.color       = "#D5FFF9";
 
+    this.Header.style.width = "51%";
+    this.Header.style.fontSize = "50px";
     this.Header.style.textAlign = "left";
+    this.Header.style.marginLeft = "3%";
+    this.Header.style.paddingTop = "3%";
+    this.Header.style.paddingBottom = "5%";
 
+    this.Description.style.width      = "51%";
+    this.Description.style.marginLeft = "3%";
     this.Description.style.textAlign   = "left";
-    this.Description.style.fontWeight = "200";
     this.Description.style.fontSize = "30px";
-    this.Description.style.marginLeft = "12%";
+    this.Description.style.fontWeight = "200";
 
     this.Body.style.textAlign   = "left";
     this.Body.style.fontWeight = "200";
     this.Body.style.fontSize = "30px";
-    //this.Body.style.marginLeft = "10%";
+    this.Body.style.padding = "5%";
 
-    this.SubText.style.marginLeft = "12%";
+    this.Picture.style.width  = "40%";
+    this.Picture.style.height = "20%";
+    this.Picture.style.marginTop = "5%";
+    this.Picture.style.marginRight = "2%";
+    this.Picture.style.float  = "right";
+    this.Picture.style.overflow = "hidden";
+    this.Picture.style.borderRadius = "25px";
 
-    
+    this.SubText.style.marginLeft = "2%";
+
+
 
 
   }
@@ -190,7 +234,7 @@ window.LoadMaps = function(){
       }
     },
     "Payload" : {
-      "Funct" : window.LoadHybrid,
+      "Funct" : window.LoadPayload,
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
@@ -212,7 +256,7 @@ window.LoadMaps = function(){
       }
     },
     "ControlPoint" : {
-      "Funct" : window.LoadHybrid,
+      "Funct" : window.LoadCP,
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
@@ -235,7 +279,7 @@ window.LoadMaps = function(){
       }
     },
     "CP2" : {
-      "Funct" : window.LoadHybrid,
+      "Funct" : window.LoadCP2,
       "Class" : null,
       "SubMaps" : {
         "Blizzard_World" : {
@@ -367,7 +411,6 @@ window.LoadPayload  = function(){
 
   document.getElementById("Title").innerHTML = "Payload";
   document.getElementById("DataHolder").innerHTML = "";
-  document.getElementById("AppHolder-BlackBox").onclick();
 
   let PayloadData = window.Data.Guides.Maps.MapTypes.Payload.Maps;
 
@@ -383,7 +426,6 @@ window.LoadCP       = function(){
 
   document.getElementById("Title").innerHTML = "CP";
   document.getElementById("DataHolder").innerHTML = "";
-  document.getElementById("AppHolder-BlackBox").onclick();
 
   let CPData = window.Data.Guides.Maps.MapTypes.CP.Maps;
 
@@ -399,7 +441,6 @@ window.Load2CP      = function(){
 
   document.getElementById("Title").innerHTML = "2CP";
   document.getElementById("DataHolder").innerHTML = "";
-  document.getElementById("AppHolder-BlackBox").onclick();
 
   let CP2Data = window.Data.Guides.Maps.MapTypes.CP2.Maps;
 

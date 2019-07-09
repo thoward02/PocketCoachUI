@@ -50,19 +50,59 @@ window.OpenProfile  = function(){
   document.getElementById("Title").innerHTML = "Profile";
 
   //Setup profile
-  let ProfilePicture     = document.createElement("div");
-  ProfilePicture.id      = "ProfilePicture";
+  let ProfilePicture      = document.createElement("div");
+  ProfilePicture.id       = "ProfilePicture";
 
-  let Picture            = document.createElement("img");
-  Picture.src            = "https://i.groupme.com/1024x1024.jpeg.8b2eb37bbaed48698e663f78206dc38d";
-  Picture.id             = "ProfilePicture-Image";
+  let Picture             = document.createElement("img");
+  Picture.src             = "https://i.groupme.com/1024x1024.jpeg.8b2eb37bbaed48698e663f78206dc38d";
+  Picture.id              = "ProfilePicture-Image";
 
-  let UserInfo           = document.createElement("div");
-  UserInfo.id            = "UserInfo";
+  let UserInfo            = document.createElement("div");
+  UserInfo.id             = "UserInfo";
 
-  let UserInfoName       = document.createElement("div");
-  UserInfoName.id        = "UserInfo-Name";
-  UserInfoName.innerHTML = "Hans, The King";
+  let UserInfoName        = document.createElement("div");
+  UserInfoName.id         = "UserInfo-Name";
+  UserInfoName.innerHTML  = "Hans, The King";
+
+  let InGameName          = document.createElement("div")
+  let GameInfoDiv         = document.createElement("div");
+  let GameInfoTitle       = document.createElement("div");
+  let GameInfoRankPicture = document.createElement("img");
+
+  GameInfoTitle.innerHTML = "SR 2557";
+  InGameName.innerHTML    = "Gearetical#13376";
+  GameInfoRankPicture.src = "http://d1mt9jmphk9kik.cloudfront.net/teamdignitas/image1525903511.png";
+
+  //Adjust center, style
+  ProfilePicture.style.marginLeft    = "31%";
+
+  //Setup
+  GameInfoDiv.style.width            = "90%";
+  GameInfoDiv.style.height           = "90%";
+  GameInfoDiv.style.marginLeft       = "5%";
+  GameInfoDiv.style.marginTop        = "5%";
+  GameInfoDiv.style.paddingTop       = "5%";
+  GameInfoDiv.style.padddingBottom   = "5%";
+  GameInfoDiv.style.background       = "url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png)";
+  GameInfoDiv.style.backgroundColor  = "rgba(0,0,0,0.5)";
+  GameInfoDiv.style.backgroundRepeat = "no-repeat"
+  GameInfoDiv.style.borderRadius     = "25px";
+
+  InGameName.style.fontFamily        = "Montserrat";
+  InGameName.style.fontWeight        = "500";
+  InGameName.style.fontSize          = "70px";
+  InGameName.style.color             = "#D5FFF9";
+  InGameName.style.textAlign         = "center";
+  InGameName.style.paddingTop        = "2%";
+
+  GameInfoTitle.style.fontFamily     = "Montserrat";
+  GameInfoTitle.style.fontWeight     = "200";
+  GameInfoTitle.style.color          = "#D5FFF9";
+  GameInfoTitle.style.textAlign      = "center";
+  GameInfoTitle.style.paddingTop     = "2%";
+
+  GameInfoRankPicture.style.marginLeft  = "35%";
+  GameInfoRankPicture.style.marginTop  = "2%";
 
 
   //Append
@@ -70,9 +110,16 @@ window.OpenProfile  = function(){
 
   UserInfo.appendChild(UserInfoName);
 
+
+  GameInfoDiv.appendChild(ProfilePicture);
+  GameInfoDiv.appendChild(UserInfo);
+  GameInfoDiv.appendChild(InGameName);
+  GameInfoDiv.appendChild(GameInfoTitle);
+  GameInfoDiv.appendChild(GameInfoRankPicture);
+
+  //Append to body
   let DataHolder = document.getElementById("DataHolder");
-  DataHolder.appendChild(ProfilePicture);
-  DataHolder.appendChild(UserInfo);
+  DataHolder.appendChild(GameInfoDiv);
 
 }
 

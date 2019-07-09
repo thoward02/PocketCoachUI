@@ -106,7 +106,7 @@ window.Data = {
               "GuideData" : {
                 "Header" : "Data",
                 "Body"   : [
-                  ["Img", "./Resources/OWMaps/TopDownViews/BWFirstPoint.png"],
+                  ["Img", "./Resources/OWMaps/TopDownViews/BWFirstPoint.png", "Map"],
                   ["Header" , "Defense - First Point"],
                   ["Text"   , "As a sniper oriented comp it is valuable that you keep the enemy between point and choke (Really you want to keep them behind choke), this way you dominate the open space, and can deny any pushes. Getting early picks at Griffin, the top left high ground from a defenders view, can decide a fight easily, so abusing that position can be valuable; however the area is very open, and its retreation paths are very tight and narrow, implying a dive or 3-3 comp could easily push onto Griffin and trap your team mid retreation in a choke. "],
                   ["Text"   , "Right side of point, next between crates and point, is the safer option to hold in most cases. Not only does it provide wide sight lines onto choke and Griffin, but it also provides several safer retreation paths, and the ability to hold the enemy in a new choke; the left side of point below Griffin. Holding crates in a Ashe Rein Zarya Comp could bode well, for you can control the front side of map through the pressure being exerted by your Ashe, and once the enemy finally rotates into either the left side of point into the choke, or onto crates, Dynamite can easily provide pressure to either stagger the enemy push, or open up an opportunity for a counter push"],

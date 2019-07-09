@@ -44,10 +44,11 @@ class MenuBlock{
 
     Style(){
       //Setup elems
-      this.Elem.style.height      = "11%";
-      this.Elem.style.width       = "80%";
-      this.Elem.style.marginLeft  = "10%";
-      this.Elem.style.marginTop   = "10%";
+      this.Elem.style.height      = "15%";
+      this.Elem.style.width       = "90%";
+      this.Elem.style.marginLeft  = "5%";
+      this.Elem.style.marginBottom= "5%";
+      this.Elem.style.marginTop   = "5%";
 
       this.Elem.style.display     = "block";
       this.Elem.style.textAlign   = "center";
@@ -128,6 +129,7 @@ class PageBlock{
       let Type = DataBlock.GuideData.Body[items][0];
       let Text = DataBlock.GuideData.Body[items][1];
 
+
       //Handle Headers
       if(Type == "Header"){
         //Create element
@@ -185,15 +187,28 @@ class PageBlock{
       }
 
       if(Type == "Img"){
+        //Create menu te
+        let Title = DataBlock.GuideData.Body[items][2];
+
         //Create element
+        let TitleElem = document.createElement("div");
+        TitleElem.innerHTML = Title;
+
         let Element = document.createElement("img");
         Element.src = Text;
 
         //style
+        TitleElem.style.textAlign = "center";
+        TitleElem.style.fontSize = "60px";
+        TitleElem.style.fontWeight = "200";
+
+        TitleElem.style.paddingTop = "10%";
+
+
         Element.style.width = "80%";
         Element.style.height = "50%";
         Element.style.marginLeft = "10%";
-        Element.style.paddingTop = "5%";
+        Element.style.paddingTop = "1%";
         Element.style.paddingBottom = "5%";
 
         Element.style.fontWeight = "200";
@@ -202,6 +217,7 @@ class PageBlock{
 
 
         //append
+        this.Elem.appendChild(TitleElem);
         this.Elem.appendChild(Element);
       }
 
@@ -566,7 +582,7 @@ window.LoadMainSupport = function(){
     //Append block
     document.getElementById("DataHolder").appendChild(Block.Elem);
 
-
+  }
 
 }
 

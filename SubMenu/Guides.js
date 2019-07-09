@@ -92,10 +92,12 @@ class PageBlock{
 
     this.Title                 = Title;
     this.DescText              = DataBlock.Description;
+    this.ImageSrc              = DataBlock.Image;
     let TitleText = this.Title.replace(/_/g, " ");
     this.Title = TitleText;
 
     this.Elem                  = document.createElement("div");
+    this.Picture               = document.createElement("img");
     this.Header                = document.createElement("div");
     this.Description           = document.createElement("div");
     this.Body                  = document.createElement("div");
@@ -105,9 +107,10 @@ class PageBlock{
     this.Elem.id               = this.Title;
     this.Header.innerHTML      = this.Title;
     this.Description.innerHTML = this.DescText;
+    this.Picture.src           = this.ImageSrc;
 
 
-
+    this.Elem.appendChild(this.Picture);
     this.Elem.appendChild(this.Header);
     this.Elem.appendChild(this.Description);
     this.Elem.appendChild(this.Body);
@@ -122,10 +125,13 @@ class PageBlock{
   Style(){
 
     this.Elem.style.width = "80%";
-    this.Elem.style.height = "100%";
-    this.Elem.style.marginLeft  = "10%";
-    this.Elem.style.marginTop   = "10%";
-    this.Elem.padding = "5%";
+    this.Elem.style.height = "80%";
+    this.Elem.style.marginLeft = "10%";
+    this.Elem.style.marginRight = "10%";
+    this.Elem.style.marginTop = "10%";
+    this.Elem.style.marginBottom = "10%";
+    this.Elem.style.padding = "5%";
+    this.Elem.style.borderRadius = "20px";
 
     this.Elem.style.backgroundColor = "#5e1d75";
 
@@ -148,6 +154,8 @@ class PageBlock{
     //this.Body.style.marginLeft = "10%";
 
     this.SubText.style.marginLeft = "12%";
+
+    
 
 
   }

@@ -1,9 +1,4 @@
 class MenuBlock{
-  /**
-  * Title, Picture and Description
-  * OnClick -> That Page
-  **/
-
 
   constructor(Title, DataBlock){
     this.Title                 = Title;
@@ -74,15 +69,15 @@ class MenuBlock{
 
       //Setup Header
       this.Header.style.textAlign   = "left";
-      this.Header.style.marginTop   = "1%";
+      this.Header.style.marginTop   = "2.8%";
       this.Header.style.marginBottom   = "1%";
       this.Header.style.marginLeft  = "32%";
-      this.Header.style.fontSize = "40px";
+      this.Header.style.fontSize = "45px";
 
       //Setup Description
       this.Description.style.textAlign   = "left";
       this.Description.style.fontWeight = "200";
-      this.Description.style.fontSize = "25px";
+      this.Description.style.fontSize = "30px";
 
       this.Description.style.marginLeft   = "32%";
       this.Description.style.marginRight  = "2%";
@@ -310,7 +305,7 @@ class StatsPageBlock{
     this.Elem.appendChild(this.Body);
     this.Body.appendChild(this.SubHead);
     this.Body.appendChild(this.SubText);
-    
+
     for(var items in DataBlock.Body) {
       //Set up vars
       let Type = DataBlock.Body[items][0];
@@ -375,7 +370,7 @@ class StatsPageBlock{
 
       if(Type == "Img"){
         //Create menu te
-        let Title = DataBlock.GuideData.Body[items][2];
+        let Title = DataBlock.Body[items][2];
 
         //Create element
         let TitleElem = document.createElement("div");
@@ -451,8 +446,8 @@ class StatsPageBlock{
     this.Body.style.fontSize = "30px";
     this.Body.style.padding = "5%";
 
-    this.Picture.style.width  = "40%";
-    this.Picture.style.height = "20%";
+    this.Picture.style.width  = "100%";
+    this.Picture.style.height = "10%";
     this.Picture.style.marginTop = "5%";
     this.Picture.style.marginRight = "2%";
     this.Picture.style.float  = "right";
@@ -465,7 +460,6 @@ class StatsPageBlock{
 
 
   }
-
 
 }
 

@@ -39,11 +39,11 @@ window.Data = {
             "Image" : "./Resources/OWMaps/MapPictures/route-66.jpg",
             "Maps"   : {
               "Dorado" : {
-                "Description" : "A payload game map, where you push a cart through the town of Dorado, and into the big Power Plant located at the end of the map.",
+                "Description" : "A payload game map where you push a cart through the town of Dorado and into the big Power Plant located at the end of the map.",
                 "Image" : "./Resources/OWMaps/MapPictures/dorado.jpg"
               },
               "Havana" : {
-                "Description" : "A payload game mode map set within Havana cuba, just days after a large hurricane.",
+                "Description" : "A payload game mode map set within Havana, Cuba, just days after a large hurricane.",
                 "Image" : "./Resources/OWMaps/MapPictures/havana.jpg"
               },
               "Junkertown" : {
@@ -55,7 +55,7 @@ window.Data = {
                 "Image" : "./Resources/OWMaps/MapPictures/rialto.jpg"
               },
               "Route_66" : {
-                "Description" : "A payload game mode map, set right after Ashe's attempt to steal the valuable cargo of a passing train.",
+                "Description" : "A payload game mode map set right after Ashe's attempt to steal the valuable cargo of a passing train.",
                 "Image" : "./Resources/OWMaps/MapPictures/route-66.jpg"
               },
               "Watchpoint_Gibraltar" : {
@@ -70,23 +70,23 @@ window.Data = {
             "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
             "Maps" : {
               "Busan" : {
-                "Description" : "A hybrid game mode map set in D.va's home, Busan Korea.",
+                "Description" : "A CP game mode map set in D.va's home, Busan, Korea.",
                 "Image" : "./Resources/OWMaps/MapPictures/busan.jpg",
               },
               "Ilios" : {
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A CP game mode map set in Illios, where Talon has apparently found an important artifact",
                 "Image" : "./Resources/OWMaps/MapPictures/ilios.jpg",
               },
               "Lijiang_Tower" :{
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A CP game mode map set in the busy nighttime streets of China, where players can observe the empty vendor stalls cast in pale moonlight",
                 "Image" : "./Resources/OWMaps/MapPictures/lijiang-tower.jpg",
               },
               "Nepal" : {
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A CP game mode map set in the ancient Omnic santuary of Nepal, where Omnics gather to consider the world into which they were born, something only thought possible for humans to do",
                 "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
               },
               "Oasis" :{
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A CP game mode map set in the jewel of Southern Iraq, Oasis, where scientists gather from all four corners of the",
                 "Image" : "./Resources/OWMaps/MapPictures/oasis.jpg",
               }
             }
@@ -97,19 +97,19 @@ window.Data = {
             "Image" : "https://steamuserimages-a.akamaihd.net/ugc/92729171400080787/7B699835AA5D4FADBA98A644A8B6FFB66B37CF3E/",
             "Maps" : {
               "Horizon_Lunar_Colony" : {
-                "Description" : "A hybrid game mode map set on the moon, where Winston grew up.",
+                "Description" : "A 2CP game mode map set on the moon, where Winston grew up.",
                 "Image" : "./Resources/OWMaps/MapPictures/horizon-lunar-colony.jpg",
               },
               "Paris" :{
-                "Description" : "A hybrid game mode map set in Paris, just meters away from the bustling main roads.",
+                "Description" : "A 2CP game mode map set in Paris, just meters away from the bustling main roads.",
                 "Image" : "./Resources/OWMaps/MapPictures/paris.jpg",
               },
               "Temple_of_Anubis" : {
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A 2CP game mode map set in Egypt, where Ana currently is holding her base of operations",
                 "Image" : "./Resources/OWMaps/MapPictures/temple-of-anubis.jpg",
               },
               "Volskaya_Industries" : {
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A 2CP game mode map set in the deep winter of Russia, where Zarya's people are fighting hard to build mechs to defeat the omnics",
                 "Image" : "./Resources/OWMaps/MapPictures/volskaya-industries.jpg",
               },
             }
@@ -461,28 +461,33 @@ window.Data = {
       "TeamComps" : {
         "Comps"     : {
           "2-2-2"       : {
-            "Description" : "Two two two comps are team comps that hold 2 tanks, 2 dps and 2 healers. It's the standard comp type ran in games all over.",
-            "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "Description" : "2-2-2 comps are team comps that hold 2 tanks, 2 dps and 2 healers. They are the standard comp type run in games all over.",
+            "Image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNHqNJBnBfb9t4f1O-P3Ep_cJeJktU4rX7wegBwGhMXkTMCm5Gzw",
             "GuideData" : {
-              "Comp1" : {
-                "Header" : "header1",
-                "Description"   : "a desc",
-                "Body"   : {
-                  "Header" : "header2",
-                  "Text"   : "body text~"
-                }
+              "Standard Dive" : {
+                "Header" : "Standard Dive",
+                "Image" : "./Resources/Heroes/winston.png",
+                "Description"   : "Standard Winston D.va, Genji tracer, Ana Zen dive.",
+                "Body"   : [
+                  ["Img", "./Resources/Heroes/winston.png", "Misc"],
+                  ["Header" , "HEADER"],
+                  ["Text"   , "QmQ"],
+
+                ]
               },
               "Comp2" : {
-                "Header" : "header1",
-                "Description"  : "a desc",
+                "Header" : "Double Sniper",
+                "Image" : "./Resources/Heroes/widowmaker.png",
+                "Description"  : "Interchangeable tank set (usually high mobility), boasting a pair of snipers and a long range healer with a utility based secondary support ",
                 "Body"   : {
                   "Header" : "header2",
                   "Text"   : "body text~"
                 }
               },
               "Comp3" : {
-                "Header" : "header1",
-                "Description"   : "a desc",
+                "Header" : "Default Rein Zarya",
+                "Image" : "./Resources/Heroes/zarya.png",
+                "Description"   : "Rein Zarya, one long range dps and one anti flanker dps, and whichever healers are in meta rotation at the moment. ",
                 "Body"   : {
                   "Header" : "header2",
                   "Text"   : "body text~"
@@ -491,7 +496,7 @@ window.Data = {
             }
           },
           "3-3"       : {
-            "Description" : "Three Three is a comp type involving 3 tanks and 3 healers, with the most prominant form known as GOATs.",
+            "Description" : "3-3 is a comp type involving 3 tanks and 3 healers, with the most prominant form known as GOATs.",
             "Image" : "",
             "GuideData" : {
               "Comp1" : {

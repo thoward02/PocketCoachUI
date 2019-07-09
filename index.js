@@ -1,5 +1,5 @@
 //Index
-window.SwitchToMenu = function(){
+window.SwitchToMenu  = function(){
     //Vars
     let LeftSide = document.getElementById("LeftSide");
 
@@ -34,7 +34,7 @@ window.SwitchToMenu = function(){
 
 }
 
-window.OpenProfile  = function(){
+window.OpenProfile   = function(){
   //Clear window
   document.getElementById("Title").innerHTML = "Heroes";
   document.getElementById("DataHolder").innerHTML = "";
@@ -123,7 +123,70 @@ window.OpenProfile  = function(){
 
 }
 
+window.TossBetaError = function(){
+  //Create element
+  let BackgroundDiv = document.createElement("div");
+  let ErrorDiv      = document.createElement("div");
+  let ErrorText     = document.createElement("div");
+  let OkayBox       = document.createElement("div");
 
+  //Append
+  ErrorDiv.appendChild(ErrorText);
+  ErrorDiv.appendChild(OkayBox);
+  BackgroundDiv.appendChild(ErrorDiv);
+  document.getElementById("Display").appendChild(BackgroundDiv);
+
+  //Style
+  BackgroundDiv.style.width  = "100%";
+  BackgroundDiv.style.height = "100%";
+  BackgroundDiv.style.margin = "0";
+  BackgroundDiv.style.backgroundColor = "rgba(0,0,0,0.6)";
+  BackgroundDiv.style.zIndex = "2";
+  BackgroundDiv.style.position = "absolute";
+
+
+  ErrorDiv.style.width            = "80%";
+  ErrorDiv.style.borderRadius     = "20px";
+  ErrorDiv.style.height           = "40%";
+  ErrorDiv.style.marginLeft       = "10%";
+  ErrorDiv.style.marginTop        = "40%";
+  ErrorDiv.style.backgroundColor  = "rgba(0,0,0,0.8)";
+
+  ErrorText.style.paddingTop  = "10%"
+  ErrorText.style.textAlign  = "center";
+  ErrorText.style.color      = "#D5FFF9";
+  ErrorText.style.fontFamily = "Montserrat";
+  ErrorText.style.fontSize   = "50px";
+
+  OkayBox.style.width           = "60%";
+  OkayBox.style.height          = "30%";
+  OkayBox.style.textAlign       = "center";
+  OkayBox.style.marginLeft      = "20%";
+  OkayBox.style.marginTop       = "40%";
+  OkayBox.style.fontSize        = "40px";
+  OkayBox.style.fontFamily      = "Montserrat";
+  OkayBox.style.color           = "rgba(115,55,176, 0.6)"
+
+
+  //Fill
+  ErrorText.innerHTML       = "This is just a BETA, you can't access that right now c:";
+  OkayBox.innerHTML         = "That's kinda shitty...?";
+  BackgroundDiv.id          = "ErrorText";
+
+
+  //Add function
+  OkayBox.onclick = function(){
+    //remove div
+    let BackgroundDiv = document.getElementById("ErrorText")
+    document.getElementById("Display").removeChild(BackgroundDiv);
+
+    //Clean function
+    document.getElementById("Display").onclick = null;
+  }
+
+
+
+}
 
 function Main(){
   //Reset sizing

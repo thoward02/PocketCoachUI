@@ -19,7 +19,7 @@ class MenuBlock{
       if(this.DescText[x] != null)
         NewText += this.DescText[x];
     }
-    NewText += " . . .";
+    NewText += " ...";
 
     this.DescText = NewText;
 
@@ -44,7 +44,7 @@ class MenuBlock{
 
     Style(){
       //Setup elems
-      this.Elem.style.height      = "10%";
+      this.Elem.style.height      = "11%";
       this.Elem.style.width       = "80%";
       this.Elem.style.marginLeft  = "10%";
       this.Elem.style.marginTop   = "10%";
@@ -58,7 +58,7 @@ class MenuBlock{
       this.Elem.style.fontWeight  = "500";
 
       this.Elem.style.color       = "#D5FFF9";
-      //this.Elem.style.background  = "linear-gradient(to right, rgba(63, 30, 97, 1), rgba(86, 168, 160, 0.1))";
+      this.Elem.style.backgroundColor = "rgba(0,0,0,0.3)";
 
       this.Elem.style.borderRadius = "20px";
 
@@ -73,17 +73,22 @@ class MenuBlock{
 
       //Setup Header
       this.Header.style.textAlign   = "left";
+      this.Header.style.marginTop   = "1%";
+      this.Header.style.marginBottom   = "1%";
       this.Header.style.marginLeft  = "32%";
+      this.Header.style.fontSize = "40px";
 
       //Setup Description
       this.Description.style.textAlign   = "left";
       this.Description.style.fontWeight = "200";
-      this.Description.style.fontSize = "30px";
+      this.Description.style.fontSize = "25px";
 
-      this.Description.style.marginLeft  = "32%";
+      this.Description.style.marginLeft   = "32%";
+      this.Description.style.marginRight  = "2%";
 
     }
 }
+
 
 class PageBlock{
 
@@ -119,14 +124,39 @@ class PageBlock{
 
 
     for(var items in DataBlock.GuideData.Body) {
+      //Set up vars
+      let Type = DataBlock.GuideData.Body[items][0];
+      let Text = DataBlock.GuideData.Body[items][1];
 
       //Handle Headers
-      if(items == "Header"){
+      if(Type == "Header"){
         //Create element
         let Element = document.createElement("div");
-        Element.innerHTML = DataBlock.GuideData.Body.Header;
+        Element.innerHTML = Text;
 
         //style
+        Element.style.marginTop  = "5%";
+        Element.style.marginBottom = "5%";
+        Element.style.marginLeft = "3%";
+        Element.style.fontSize   = "70px";
+
+
+        //append
+        this.Elem.appendChild(Element);
+
+      }
+
+      if(Type == "SubHeader"){
+        //Create element
+        let Element = document.createElement("div");
+        Element.innerHTML = Text;
+
+        //style
+        Element.style.marginTop  = "5%";
+        Element.style.marginBottom = "5%";
+        Element.style.marginLeft = "3%";
+        Element.style.fontSize   = "45px";
+        Element.style.fontWeight = "200";
 
 
         //append
@@ -135,12 +165,40 @@ class PageBlock{
       }
 
       //Handle Paragraphs
-      if(items == "Text"){
+      if(Type == "Text"){
         //Create element
         let Element = document.createElement("div");
-        Element.innerHTML = DataBlock.GuideData.Body.Text;
+        Element.innerHTML = Text;
 
         //style
+        Element.style.marginLeft = "3%";
+        Element.style.marginRight = "3%";
+        Element.style.paddingTop = "2%";
+
+        Element.style.fontWeight = "200";
+        Element.style.fontSize = "30px";
+
+
+
+        //append
+        this.Elem.appendChild(Element);
+      }
+
+      if(Type == "Img"){
+        //Create element
+        let Element = document.createElement("img");
+        Element.src = Text;
+
+        //style
+        Element.style.width = "80%";
+        Element.style.height = "50%";
+        Element.style.marginLeft = "10%";
+        Element.style.paddingTop = "5%";
+        Element.style.paddingBottom = "5%";
+
+        Element.style.fontWeight = "200";
+        Element.style.fontSize = "30px";
+
 
 
         //append
@@ -157,13 +215,13 @@ class PageBlock{
   Style(){
 
     this.Elem.style.width = "90%";
-    this.Elem.style.height = "90%";
     this.Elem.style.marginLeft = "5%";
     this.Elem.style.marginTop = "5%";
     this.Elem.style.marginBottom = "10%";
+    this.Elem.style.paddingBottom = "10%";
     this.Elem.style.borderRadius = "25px";
 
-    this.Elem.style.backgroundColor = "#5e1d75";
+    this.Elem.style.backgroundColor = "rgba(0,0,0,0.3)";
 
     this.Elem.style.fontFamily  = "Montserrat";
     this.Elem.style.fontWeight  = "500";
@@ -180,6 +238,7 @@ class PageBlock{
 
     this.Description.style.width      = "51%";
     this.Description.style.marginLeft = "3%";
+    this.Description.style.paddingTop = "3%";
     this.Description.style.textAlign   = "left";
     this.Description.style.fontSize = "30px";
     this.Description.style.fontWeight = "200";
@@ -487,6 +546,26 @@ window.LoadDPS         = function(){
 }
 
 window.LoadMainSupport = function(){
+  //Setup hero list
+  let HeroList = window.Data.Guides.Heroes.HeroTypes.DPS.Heroes;
+
+  //Clean up main page
+  document.getElementById("DataHolder").innerHTML = "";
+  document.getElementById("Title").innerHTML      = "DPS";
+
+  //Loop hero list
+  for(var items in HeroList){
+    //Set up vars
+    let HeroData = HeroList[items];
+    let Hero     = items;
+
+    //Create button for hero
+    let Block = new MenuBlock(Hero, HeroData);
+    Block.Elem.onclick = function(x){window.LoadHeroPage(x.path[1].id)}
+
+    //Append block
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+
 
 
 }

@@ -104,11 +104,20 @@ window.Data = {
               "Description" : "A hybrid game mode map set within a fake Blizzard theme park, hosting elements from other blizzard games.",
               "Image" : "./Resources/OWMaps/MapPictures/blizzard-world.jpg",
               "GuideData" : {
-                "Header" : "Test Head",
-                "Body"   : {
-                  "Header" : "Head 1",
-                  "Text"   : "Test Text"
-                }
+                "Header" : "Data",
+                "Body"   : [
+                  ["Img", "./Resources/OWMaps/TopDownViews/BWFirstPoint.png"],
+                  ["Header" , "Defense - First Point"],
+                  ["Text"   , "As a sniper oriented comp it is valuable that you keep the enemy between point and choke (Really you want to keep them behind choke), this way you dominate the open space, and can deny any pushes. Getting early picks at Griffin, the top left high ground from a defenders view, can decide a fight easily, so abusing that position can be valuable; however the area is very open, and its retreation paths are very tight and narrow, implying a dive or 3-3 comp could easily push onto Griffin and trap your team mid retreation in a choke. "],
+                  ["Text"   , "Right side of point, next between crates and point, is the safer option to hold in most cases. Not only does it provide wide sight lines onto choke and Griffin, but it also provides several safer retreation paths, and the ability to hold the enemy in a new choke; the left side of point below Griffin. Holding crates in a Ashe Rein Zarya Comp could bode well, for you can control the front side of map through the pressure being exerted by your Ashe, and once the enemy finally rotates into either the left side of point into the choke, or onto crates, Dynamite can easily provide pressure to either stagger the enemy push, or open up an opportunity for a counter push"],
+                  ["Text"   , "When you boil it down, Blizzard World is about controlling the statue sight lines, and punishing grouped up enemies in chokes points"],
+                  ["Header" , "Defense - First Point - Comps"],
+                  ["SubHeader", "COMP: Orisa Dva bunker, Ashe Widow, Ana Zen"],
+                  ["Text"   , "Orisa will provide steady cover on crates for the Ashe, Ana and Zen, while the Widow looks for off angles to get early picks on squishies out of position. D.va will provide peel to the Widow as she searches for picks, as well as keep Orisa’s shield up time as high as possible. The Ashe and Widow can both retreat to different high ground (through Coach Gun and grapple) to exert pressure on the enemy once they finally get onto the point, while the core team stays on point with Orisa blowing cooldowns to keep pressure on the point while waiting for the optimal ult economy // opening picks to occur. Ana's Nano will allow key targets being pressured to stay alive during team fights, along with the transcendence from Zen to keep the team alive. Ashe’s BOB will be used to pressure supports into the sightlines of either ADS hero, and supercharger and bomb will be used to counter incoming pressure."],
+                  ["SubHeader", "COMP: Rein Zarya, Hanzo Widow, Ana Zen"],
+                  ["Text"   , "This comp is all about abusing the choke points around the point, while still exerting heavy pressure with the sniper duo. The Rein and Zarya combo allows for easy ult rotation, and ability synergy. For example, once the enemies group up in the small corridor, Rein can swing into them while being bubbled to both generate ult charge and feed Zarya energy, while also exerting heavy pressure onto the enemy front lines. This energy farm would leave Zarya with at least 40 Energy, allowing her to exert heavy pressure through right clicks into the backline(Note at higher levels this type of bold energy farming in chokes can be punished if done incorrectly, enemies could capitalize on the lack of a bubble from Zarya and hard pressure the Rein) Hanzo’s brawl potential with storm arrow in combination with zen’s discord allows for heavy single target burst. In terms of ults, Rein and Zarya already have a great rotation going on, with the Hanzo joining in to provide grav dragon. The ana’s nano will be dedicated to either saving a single target, or allowing one of the tanks to exert more pressure // gain more ult charge during a fight, and the trance will be saved for the saving the core members"]
+                ]
+
               }
             },
             "Eichenwalde" : {
@@ -331,71 +340,71 @@ window.Data = {
             "Description" : "These Heroes are the primary damage dealing heroes within Overwatch",
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png",
             "Heroes" : {
-              "Ashe": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Bastion": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Doomfist": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Genji": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Hanzo": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Junkrat": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "McCree": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Mei": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Pharah": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Reaper": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Soldier:76": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Sombra": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Symmetra": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Torbjorn": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Tracer": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
-              },
-              "Widowmaker": {
-                "Description" : "THIS IS HERO TEST DATA lowercase",
-                "Image"       : "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/icon-portrait.png"
+                "Ashe": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/icon-portrait.png"
+                },
+                "Bastion": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/bastion/icon-portrait.png"
+                },
+                "Doomfist": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/icon-portrait.png"
+                },
+                "Genji": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png"
+                },
+                "Hanzo": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/icon-portrait.png"
+                },
+                "Junkrat": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/junkrat/icon-portrait.png"
+                },
+                "McCree": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/icon-portrait.png"
+                },
+                "Mei": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/mei/icon-portrait.png"
+                },
+                "Pharah": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/icon-portrait.png"
+                },
+                "Reaper": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/icon-portrait.png"
+                },
+                "Soldier-76": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/icon-portrait.png"
+                },
+                "Sombra": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/icon-portrait.png"
+                },
+                "Symmetra": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/symmetra/icon-portrait.png"
+                },
+                "Torbjorn": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/torbjorn/icon-portrait.png"
+                },
+                "Tracer": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/tracer/icon-portrait.png"
+                },
+                "Widowmaker": {
+                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/icon-portrait.png"
+                }
               }
-            }
           },
           "MainSupport" : {
             "Description" : "Main supports are your healers, in charge of keeping the entire team alive",

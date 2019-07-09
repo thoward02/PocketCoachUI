@@ -84,6 +84,7 @@ window.OpenProfile   = function(){
   GameInfoDiv.style.paddingTop       = "5%";
   GameInfoDiv.style.padddingBottom   = "5%";
   GameInfoDiv.style.background       = "url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png)";
+  GameInfoDiv.style.backgroundPosition = "bottom";
   GameInfoDiv.style.backgroundColor  = "rgba(0,0,0,0.5)";
   GameInfoDiv.style.backgroundRepeat = "no-repeat"
   GameInfoDiv.style.borderRadius     = "25px";

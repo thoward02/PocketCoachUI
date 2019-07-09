@@ -8,35 +8,35 @@ window.Data = {
         "MapTypes" : {
           "Hybrid"       : {
             "Description" : "Hybrid is a hybrid game type between control point (CP) and payload. You must first capture the control point, then push the payload to the end of the map.",
-            "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
+            "Image" : "https://static.playoverwatch.com/img/pages/maps/images/kings-row.jpg",
             "Maps"   : {
               "Blizzard_World" : {
                 "Description" : "A hybrid game mode map set within a fake Blizzard theme park, hosting elements from other blizzard games.",
-                "Image" : "https://vignette.wikia.nocookie.net/overwatch/images/8/8d/Overwatch_BlizzardWorld_000_png_jpgcopy.jpg/revision/latest?cb=20171103212134",
+                "Image" : "./Resources/OWMaps/MapPictures/blizzard-world.jpg",
               },
               "Eichenwalde" : {
                 "Description" : "A hybrid game mode map set within an old German castle, once defended by Reinhardt himself",
-                "Image" : "https://www.owfire.com/images/maps/eichenwalde-1.jpg",
+                "Image" : "./Resources/OWMaps/MapPictures/eichenwalde.jpg",
               },
               "Hollywood" : {
                 "Description" : "A hybrid game mode map set in Hollywood, USA.",
-                "Image" : "https://www.owfire.com/images/maps/hollywood-1.jpg",
+                "Image" : "./Resources/OWMaps/MapPictures/hollywood.jpg",
               },
               "Kings_Row" : {
                 "Description" : "A hybrid game mode map set in the late future of London, where Omnics fight daily for their rights.",
-                "Image" : "https://liquipedia.net/commons/images/thumb/b/b0/Kings_row_map.jpg/600px-Kings_row_map.jpg",
+                "Image" : "./Resources/OWMaps/MapPictures/kings-row.jpg",
 
               },
               "Numbani" : {
                 "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
-                "Image" : "https://www.owfire.com/images/maps/numbani-1.jpg",
+                "Image" : "./Resources/OWMaps/MapPictures/numbani.jpg",
               }
 
             }
           },
           "Payload"      : {
             "Description" : "Payload is all about pushing the cart from one end of the map to the other, by pushing it to three points. Players must either push the payload or stop other players from doing so.",
-            "Image" : "https://www.owfire.com/images/maps/route-66-1.jpg",
+            "Image" : "./Resources/OWMaps/MapPictures/route-66.jpg",
             "Maps"   : {
               "Dorado" : "/Api/Guides/Maps/Dorado",
               "Havana" : "/Api/Guides/Maps/Havana",
@@ -49,13 +49,28 @@ window.Data = {
           },
           "ControlPoint" : {
             "Description" : "Control point is akin to King of the Hill, where two teams battle to control the center point. The first team to win 2 out of the three maps wins the game.",
-            "Image" : "https://gamepedia.cursecdn.com/overwatch_gamepedia/thumb/f/f3/Nepal_loading_screen.jpg/1200px-Nepal_loading_screen.jpg",
+            "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
             "Maps" : {
-              "Busan" : "/Api/Guides/Maps/Busan",
-              "Ilios" : "/Api/Guides/Maps/Ilios",
-              "Lijiang_Tower" : "/Api/Guides/Maps/Lijiang_Tower",
-              "Nepal" : "/Api/Guides/Maps/Nepal",
-              "Oasis" : "/Api/Guides/Maps/Oasis"
+              "Busan" : {
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/busan.jpg",
+              },
+              "Ilios" : {
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/ilios.jpg",
+              },
+              "Lijiang_Tower" :{
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/lijiang-tower.jpg",
+              },
+              "Nepal" : {
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
+              },
+              "Oasis" :{
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/oasis.jpg",
+              }
             }
 
           },
@@ -63,10 +78,22 @@ window.Data = {
             "Description" : "2 CP is where teams must defend or attack two control points. If the attacking team manages to take the first point, the defending team must rotate back to the second point and defend.",
             "Image" : "https://steamuserimages-a.akamaihd.net/ugc/92729171400080787/7B699835AA5D4FADBA98A644A8B6FFB66B37CF3E/",
             "Maps" : {
-              "Horizon_Lunar_Colony" : "/Api/Guides/Maps/Horizon_Lunar_Colony",
-              "Paris" : "/Api/Guides/Maps/Paris",
-              "Temple_of_Anubis" : "/Api/Guides/Maps/Temple_of_Anubis",
-              "Volskaya_Industries" : "/Api/Guides/Maps/Volskaya_Industries"
+              "Horizon_Lunar_Colony" : {
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/horizon-lunar-colony.jpg",
+              },
+              "Paris" :{
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/paris.jpg",
+              },
+              "Temple_of_Anubis" : {
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/temple-of-anubis.jpg",
+              },
+              "Volskaya_Industries" : {
+                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Image" : "./Resources/OWMaps/MapPictures/volskaya-industries.jpg",
+              },
             }
           }
 
@@ -74,8 +101,8 @@ window.Data = {
         "MapList" : {
           "Maps" :  {
             "Blizzard_World" : {
-              "Description" : "Ovo",
-              "Image" : "https://pmcvariety.files.wordpress.com/2018/11/world-of-warcraft-classic.png?w=1000&h=563&crop=1",
+              "Description" : "A hybrid game mode map set within a fake Blizzard theme park, hosting elements from other blizzard games.",
+              "Image" : "./Resources/OWMaps/MapPictures/blizzard-world.jpg",
               "GuideData" : {
                 "Header" : "Test Head",
                 "Body"   : {
@@ -86,7 +113,7 @@ window.Data = {
             },
             "Eichenwalde" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/eichenwalde.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -97,7 +124,7 @@ window.Data = {
             },
             "Hollywood" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/hollywood.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -108,7 +135,7 @@ window.Data = {
             },
             "Kings_Row" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/kings-row.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -119,7 +146,7 @@ window.Data = {
             },
             "Numbani" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/numbani.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -130,7 +157,7 @@ window.Data = {
             },
             "Dorado" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/dorado.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -141,7 +168,7 @@ window.Data = {
             },
             "Havana" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/havana.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -152,7 +179,7 @@ window.Data = {
             },
             "Junkertown" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/junkertown.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -163,7 +190,7 @@ window.Data = {
             },
             "Rialto" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/rialto.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -174,7 +201,7 @@ window.Data = {
             },
             "Route_66" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/route-66.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -185,7 +212,7 @@ window.Data = {
             },
             "Watchpoint_Gibraltar" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/watchpoint-gibraltar.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -196,7 +223,7 @@ window.Data = {
             },
             "Horizon_Lunar_Colony" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/horizon-lunar-colony.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -207,7 +234,7 @@ window.Data = {
             },
             "Paris" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/paris.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -218,7 +245,7 @@ window.Data = {
             },
             "Temple_of_Anubis" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/temple-of-anubis.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -229,7 +256,7 @@ window.Data = {
             },
             "Volskaya_Industries" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/volskaya-industries.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -240,7 +267,7 @@ window.Data = {
             },
             "Busan" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/busan.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -251,7 +278,7 @@ window.Data = {
             },
             "Ilios" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/ilios.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -262,7 +289,7 @@ window.Data = {
             },
             "Lijiang_Tower" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/lijiang-tower.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -273,7 +300,7 @@ window.Data = {
             },
             "Nepal" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {
@@ -284,7 +311,7 @@ window.Data = {
             },
             "Oasis" : {
               "Description" : "",
-              "Image" : "",
+              "Image" : "./Resources/OWMaps/MapPictures/oasis.jpg",
               "GuideData" : {
                 "Header" : "",
                 "Body"   : {

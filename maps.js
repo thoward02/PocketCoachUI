@@ -38,21 +38,39 @@ window.Data = {
             "Description" : "Payload is all about pushing the cart from one end of the map to the other, by pushing it to three points. Players must either push the payload or stop other players from doing so.",
             "Image" : "./Resources/OWMaps/MapPictures/route-66.jpg",
             "Maps"   : {
-              "Dorado" : "/Api/Guides/Maps/Dorado",
-              "Havana" : "/Api/Guides/Maps/Havana",
-              "Junkertown" : "/Api/Guides/Maps/Junkertown",
-              "Rialto" : "/Api/Guides/Maps/Rialto",
-              "Route_66" : "/Api/Guides/Maps/Route_66",
-              "Watchpoint_Gibraltar" : "/Api/Guides/Maps/Watchpoint_Gibraltar"
+              "Dorado" : {
+                "Description" : "A payload game map, where you push a cart through the town of Dorado, and into the big Power Plant located at the end of the map.",
+                "Image" : "./Resources/OWMaps/MapPictures/dorado.jpg"
+              },
+              "Havana" : {
+                "Description" : "A payload game mode map set within Havana cuba, just days after a large hurricane.",
+                "Image" : "./Resources/OWMaps/MapPictures/havana.jpg"
+              },
+              "Junkertown" : {
+                "Description" : "A payload game mode map set in the outback of Australia, where laws and rules have ceased to exist",
+                "Image" : "./Resources/OWMaps/MapPictures/junkertown.jpg"
+              },
+              "Rialto" : {
+                "Description" : "A payload game mode map set within Rialto, Italy; home to some of the most elite Talon villans.",
+                "Image" : "./Resources/OWMaps/MapPictures/rialto.jpg"
+              },
+              "Route_66" : {
+                "Description" : "A payload game mode map, set right after Ashe's attempt to steal the valuable cargo of a passing train.",
+                "Image" : "./Resources/OWMaps/MapPictures/route-66.jpg"
+              },
+              "Watchpoint_Gibraltar" : {
+                "Description" : "A hybrid game mode map set within the now empty Overwatch base located in Gibraltar.",
+                "Image" : "./Resources/OWMaps/MapPictures/watchpoint-gibraltar.jpg"
+              },
             }
 
           },
-          "ControlPoint" : {
+          "CP" : {
             "Description" : "Control point is akin to King of the Hill, where two teams battle to control the center point. The first team to win 2 out of the three maps wins the game.",
             "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
             "Maps" : {
               "Busan" : {
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A hybrid game mode map set in D.va's home, Busan Korea.",
                 "Image" : "./Resources/OWMaps/MapPictures/busan.jpg",
               },
               "Ilios" : {
@@ -79,11 +97,11 @@ window.Data = {
             "Image" : "https://steamuserimages-a.akamaihd.net/ugc/92729171400080787/7B699835AA5D4FADBA98A644A8B6FFB66B37CF3E/",
             "Maps" : {
               "Horizon_Lunar_Colony" : {
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A hybrid game mode map set on the moon, where Winston grew up.",
                 "Image" : "./Resources/OWMaps/MapPictures/horizon-lunar-colony.jpg",
               },
               "Paris" :{
-                "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+                "Description" : "A hybrid game mode map set in Paris, just meters away from the bustling main roads.",
                 "Image" : "./Resources/OWMaps/MapPictures/paris.jpg",
               },
               "Temple_of_Anubis" : {
@@ -108,7 +126,7 @@ window.Data = {
                 "Body"   : [
                   ["Img", "./Resources/OWMaps/TopDownViews/BWFirstPoint.png", "Map"],
                   ["Header" , "Defense - First Point"],
-                  ["Text"   , "As a sniper oriented comp it is valuable that you keep the enemy between point and choke (Really you want to keep them behind choke), this way you dominate the open space, and can deny any pushes. Getting early picks at Griffin, the top left high ground from a defenders view, can decide a fight easily, so abusing that position can be valuable; however the area is very open, and its retreation paths are very tight and narrow, implying a dive or 3-3 comp could easily push onto Griffin and trap your team mid retreation in a choke. "],
+                  ["Text"   , "As a sniper oriented comp, it is valuable that you keep the enemy between point and choke (Really you want to keep them behind choke), this way you dominate the open space, and can deny any pushes. Getting early picks at Griffin, the top left high ground from a defender's view, can decide a fight easily, so abusing that position can be valuable; however, the area is very open, and its retreation paths are very tight and narrow, implying that a dive or 3-3 comp could easily push onto Griffin and trap your team mid retreation in a choke. "],
                   ["Text"   , "Right side of point, next between crates and point, is the safer option to hold in most cases. Not only does it provide wide sight lines onto choke and Griffin, but it also provides several safer retreation paths, and the ability to hold the enemy in a new choke; the left side of point below Griffin. Holding crates in a Ashe Rein Zarya Comp could bode well, for you can control the front side of map through the pressure being exerted by your Ashe, and once the enemy finally rotates into either the left side of point into the choke, or onto crates, Dynamite can easily provide pressure to either stagger the enemy push, or open up an opportunity for a counter push"],
                   ["Text"   , "When you boil it down, Blizzard World is about controlling the statue sight lines, and punishing grouped up enemies in chokes points"],
                   ["Header" , "Defense - First Point - Comps"],
@@ -121,7 +139,7 @@ window.Data = {
               }
             },
             "Eichenwalde" : {
-              "Description" : "",
+              "Description" : "A hybrid game mode map set within an old German castle, once defended by Reinhardt himself",
               "Image" : "./Resources/OWMaps/MapPictures/eichenwalde.jpg",
               "GuideData" : {
                 "Header" : "",
@@ -341,67 +359,67 @@ window.Data = {
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png",
             "Heroes" : {
                 "Ashe": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/icon-portrait.png"
                 },
                 "Bastion": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Once a frontline combatant in the devastating Omnic Crisis, this curious Bastion unit now explores the world, fascinated by nature but wary of a fearful humanity.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/bastion/icon-portrait.png"
                 },
                 "Doomfist": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Recently freed from imprisonment, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/icon-portrait.png"
                 },
                 "Genji": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "The cyborg Genji Shimada has made peace with the augmented body he once rejected, and in doing so, he has discovered a higher humanity.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png"
                 },
                 "Hanzo": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Mastering his skills as a bowman and an assassin, Hanzo Shimada strives to prove himself as a warrior without peer",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/icon-portrait.png"
                 },
                 "Junkrat": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Junkrat is an explosives-obsessed freak who lives to cause chaos and destruction.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/junkrat/icon-portrait.png"
                 },
                 "McCree": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Armed with his Peacekeeper revolver, the outlaw Jesse McCree doles out justice on his own terms.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/icon-portrait.png"
                 },
                 "Mei": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Mei is a scientist who has taken the fight to preserve the environment into her own hands.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/mei/icon-portrait.png"
                 },
                 "Pharah": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Fareeha Amari's commitment to duty runs in her blood. She comes from a long line of highly decorated soldiers and burns with the desire to serve with honor.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/icon-portrait.png"
                 },
                 "Reaper": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Some speak of a black-robed terrorist known only as the Reaper. His identity and motives are a mystery. What is known is that where he appears, death follows.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/icon-portrait.png"
                 },
                 "Soldier-76": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Currently the target of an international manhunt, the vigilante known as Soldier: 76 wages a personal war to expose the truth behind Overwatch's collapse.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/icon-portrait.png"
                 },
                 "Sombra": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "One of the world's most notorious hackers, Sombra uses information to manipulate those in power.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/icon-portrait.png"
                 },
                 "Symmetra": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Symmetra literally bends reality. By manipulating hard-light constructs, she crafts the world as she wishes it to be, in hopes of engineering a perfect society.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/symmetra/icon-portrait.png"
                 },
                 "Torbjorn": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "At its height, Overwatch possessed one of the most advanced armaments on the planet, which could be traced to the workshop of an ingenious engineer named Torbjörn Lindholm.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/torbjorn/icon-portrait.png"
                 },
                 "Tracer": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "The former Overwatch agent known as Tracer is a time-jumping adventurer and an irrepressible force for good.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/tracer/icon-portrait.png"
                 },
                 "Widowmaker": {
-                  "Description": "THIS IS HERO TEST DATA lowercase",
+                  "Description": "Widowmaker is the perfect assassin: a patient, ruthlessly efficient killer who shows neither emotion nor remorse.",
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/icon-portrait.png"
                 }
               }
@@ -444,23 +462,78 @@ window.Data = {
         "Comps"     : {
           "2-2-2"       : {
             "Description" : "Two two two comps are team comps that hold 2 tanks, 2 dps and 2 healers. It's the standard comp type ran in games all over.",
-            "Image" : "",
-            "GuideData" : {}
+            "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "GuideData" : {
+              "Comp1" : {
+                "Header" : "header1",
+                "Description"   : "a desc",
+                "Body"   : {
+                  "Header" : "header2",
+                  "Text"   : "body text~"
+                }
+              },
+              "Comp2" : {
+                "Header" : "header1",
+                "Description"  : "a desc",
+                "Body"   : {
+                  "Header" : "header2",
+                  "Text"   : "body text~"
+                }
+              },
+              "Comp3" : {
+                "Header" : "header1",
+                "Description"   : "a desc",
+                "Body"   : {
+                  "Header" : "header2",
+                  "Text"   : "body text~"
+                }
+              }
+            }
           },
           "3-3"       : {
             "Description" : "Three Three is a comp type involving 3 tanks and 3 healers, with the most prominant form known as GOATs.",
             "Image" : "",
-            "GuideData" : {}
+            "GuideData" : {
+              "Comp1" : {
+                "Header" : "header1",
+                "Description"   : "a desc",
+                "Body"   : {
+                  "Header" : "header2",
+                  "Text"   : "body text~"
+                }
+              },
+              "Comp2" : {
+                "Header" : "header1",
+                "Description"  : "a desc",
+                "Body"   : {
+                  "Header" : "header2",
+                  "Text"   : "body text~"
+                }
+              },
+              "Comp3" : {
+                "Header" : "header1",
+                "Description"   : "a desc",
+                "Body"   : {
+                  "Header" : "header2",
+                  "Text"   : "body text~"
+                }
+              }
+            }
 
           },
           "OffMeta"   : {
             "Description" : "This category is for what could be considered as off meta, or cheese comps",
             "Image" : "",
-            "GuideData" : {}
+            "GuideData" : {
+              "Header" : "header1",
+              "Body"   : {
+                "Header" : "header2",
+                "Text"   : "body text"
+              }
+            }
           }
         }
       }
-
     },
 
     "Quizzes" : {
@@ -510,9 +583,6 @@ window.Data = {
         "Data" : {}
       }
     }
-
-
-
 
 
 }

@@ -119,7 +119,7 @@ function BuildMenu(){
 
       Block.Elem.style.width =  "80%";
       Block.Elem.style.marginTop = "5%";
-      
+
 
     }).observe(document.getElementById("LeftSide"));
 

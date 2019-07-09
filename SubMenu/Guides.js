@@ -94,7 +94,6 @@ class MenuBlock{
 class PageBlock{
 
   constructor(Title, DataBlock){
-
     this.Title                 = Title;
     this.DescText              = DataBlock.Description;
     this.ImageSrc              = DataBlock.Image;
@@ -122,7 +121,6 @@ class PageBlock{
     this.Elem.appendChild(this.Body);
     this.Body.appendChild(this.SubHead);
     this.Body.appendChild(this.SubText);
-
 
     for(var items in DataBlock.GuideData.Body) {
       //Set up vars
@@ -282,6 +280,196 @@ class PageBlock{
 
 }
 
+class StatsPageBlock{
+
+  constructor(Title, DataBlock){
+    this.Title                 = Title;
+    this.DescText              = DataBlock.Description;
+    this.ImageSrc              = DataBlock.Image;
+
+    let TitleText              = this.Title.replace(/_/g, " ");
+    this.Title                 = TitleText;
+
+    this.Elem                  = document.createElement("div");
+    this.Picture               = document.createElement("img");
+    this.Description           = document.createElement("div");
+    this.Header                = document.createElement("div");
+
+    this.Body                  = document.createElement("div");
+    this.SubHead               = document.createElement("div");
+    this.SubText               = document.createElement("div");
+
+    this.Elem.id               = this.Title;
+    this.Header.innerHTML      = this.Title;
+    this.Description.innerHTML = this.DescText;
+    this.Picture.src           = this.ImageSrc;
+
+    this.Elem.appendChild(this.Picture);
+    this.Elem.appendChild(this.Header);
+    this.Elem.appendChild(this.Description);
+    this.Elem.appendChild(this.Body);
+    this.Body.appendChild(this.SubHead);
+    this.Body.appendChild(this.SubText);
+    
+    for(var items in DataBlock.Body) {
+      //Set up vars
+      let Type = DataBlock.Body[items][0];
+      let Text = DataBlock.Body[items][1];
+
+
+      //Handle Headers
+      if(Type == "Header"){
+        //Create element
+        let Element = document.createElement("div");
+        Element.innerHTML = Text;
+
+        //style
+        Element.style.marginTop  = "5%";
+        Element.style.marginBottom = "5%";
+        Element.style.marginLeft = "3%";
+        Element.style.fontSize   = "70px";
+
+
+        //append
+        this.Elem.appendChild(Element);
+
+      }
+
+      if(Type == "SubHeader"){
+        //Create element
+        let Element = document.createElement("div");
+        Element.innerHTML = Text;
+
+        //style
+        Element.style.marginTop  = "5%";
+        Element.style.marginBottom = "5%";
+        Element.style.marginLeft = "3%";
+        Element.style.fontSize   = "45px";
+        Element.style.fontWeight = "200";
+
+
+        //append
+        this.Elem.appendChild(Element);
+
+      }
+
+      //Handle Paragraphs
+      if(Type == "Text"){
+        //Create element
+        let Element = document.createElement("div");
+        Element.innerHTML = Text;
+
+        //style
+        Element.style.marginLeft = "3%";
+        Element.style.marginRight = "3%";
+        Element.style.paddingTop = "2%";
+
+        Element.style.fontWeight = "200";
+        Element.style.fontSize = "30px";
+
+
+
+        //append
+        this.Elem.appendChild(Element);
+      }
+
+      if(Type == "Img"){
+        //Create menu te
+        let Title = DataBlock.GuideData.Body[items][2];
+
+        //Create element
+        let TitleElem = document.createElement("div");
+        TitleElem.innerHTML = Title;
+
+        let Element = document.createElement("img");
+        Element.src = Text;
+
+        //style
+        TitleElem.style.textAlign = "center";
+        TitleElem.style.fontSize = "60px";
+        TitleElem.style.fontWeight = "200";
+
+        TitleElem.style.paddingTop = "10%";
+
+
+        Element.style.width = "80%";
+        Element.style.height = "50%";
+        Element.style.marginLeft = "10%";
+        Element.style.paddingTop = "1%";
+        Element.style.paddingBottom = "5%";
+
+        Element.style.fontWeight = "200";
+        Element.style.fontSize = "30px";
+
+
+
+        //append
+        this.Elem.appendChild(TitleElem);
+        this.Elem.appendChild(Element);
+      }
+
+
+    }
+    this.Style();
+
+  }
+
+
+  Style(){
+
+    this.Elem.style.width = "90%";
+    this.Elem.style.marginLeft = "5%";
+    this.Elem.style.marginTop = "5%";
+    this.Elem.style.marginBottom = "10%";
+    this.Elem.style.paddingBottom = "10%";
+    this.Elem.style.borderRadius = "25px";
+
+    this.Elem.style.backgroundColor = "rgba(0,0,0,0.3)";
+
+    this.Elem.style.fontFamily  = "Montserrat";
+    this.Elem.style.fontWeight  = "500";
+
+    this.Elem.style.display     = "block";
+    this.Elem.style.color       = "#D5FFF9";
+
+    this.Header.style.width = "51%";
+    this.Header.style.fontSize = "50px";
+    this.Header.style.textAlign = "left";
+    this.Header.style.marginLeft = "3%";
+    this.Header.style.paddingTop = "3%";
+    this.Header.style.paddingBottom = "5%";
+
+    this.Description.style.width      = "51%";
+    this.Description.style.marginLeft = "3%";
+    this.Description.style.paddingTop = "3%";
+    this.Description.style.textAlign   = "left";
+    this.Description.style.fontSize = "30px";
+    this.Description.style.fontWeight = "200";
+
+    this.Body.style.textAlign   = "left";
+    this.Body.style.fontWeight = "200";
+    this.Body.style.fontSize = "30px";
+    this.Body.style.padding = "5%";
+
+    this.Picture.style.width  = "40%";
+    this.Picture.style.height = "20%";
+    this.Picture.style.marginTop = "5%";
+    this.Picture.style.marginRight = "2%";
+    this.Picture.style.float  = "right";
+    this.Picture.style.overflow = "hidden";
+    this.Picture.style.borderRadius = "25px";
+
+    this.SubText.style.marginLeft = "2%";
+
+
+
+
+  }
+
+
+}
+
+
 //Load Guides
 window.LoadMaps = function(){
   window.MapTypeData = {
@@ -312,43 +500,40 @@ window.LoadMaps = function(){
       "Funct" : window.LoadPayload,
       "Class" : null,
       "SubMaps" : {
-        "Blizzard_World" : {
+        "Dorado" : {},
+        "Havana" : {},
+        "Junkertown" : {},
+        "Rialto" : {},
+        "Route_66" : {},
+        "Watchpoint_Gibraltar" : {}
 
-        },
-        "Eichenwalde" : {
+      },
 
-        },
-        "Hollywood" : {
 
-        },
-        "Kings_Row" : {
-
-        },
-        "Numbani" : {
-
-        }
-
-      }
     },
-    "ControlPoint" : {
+    "CP" : {
       "Funct" : window.LoadCP,
       "Class" : null,
       "SubMaps" : {
-        "Blizzard_World" : {
-
-
+        "Busan" : {
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/busan.jpg",
         },
-        "Eichenwalde" : {
-
-          "Class" : null
+        "Ilios" : {
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/ilios.jpg",
         },
-        "Hollywood" : {
+        "Lijiang_Tower" :{
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/lijiang-tower.jpg",
         },
-        "Kings_Row" : {
-
+        "Nepal" : {
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/nepal.jpg",
         },
-        "Numbani" : {
-
+        "Oasis" :{
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/oasis.jpg",
         }
 
       }
@@ -357,22 +542,22 @@ window.LoadMaps = function(){
       "Funct" : window.LoadCP2,
       "Class" : null,
       "SubMaps" : {
-        "Blizzard_World" : {
-
+        "Horizon_Lunar_Colony" : {
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/horizon-lunar-colony.jpg",
         },
-        "Eichenwalde" : {
-
+        "Paris" :{
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/paris.jpg",
         },
-        "Hollywood" : {
-
+        "Temple_of_Anubis" : {
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/temple-of-anubis.jpg",
         },
-        "Kings_Row" : {
-
-
+        "Volskaya_Industries" : {
+          "Description" : "A hybrid game mode map set in Numbani, a artificial city located on the edge of Nigeria, boasting a home where Omnics and Humans may exist in peace together",
+          "Image" : "./Resources/OWMaps/MapPictures/volskaya-industries.jpg",
         },
-        "Numbani" : {
-
-        }
 
       }
     },
@@ -442,6 +627,20 @@ window.LoadHeroes = function(){
 
 window.LoadTeamComps = function(){
 
+  window.TeamComp = {
+
+      "2-2-2"       : {
+        "Funct" : window.Load222
+      },
+      "3-3"       : {
+        "Funct" : window.Load33
+
+      },
+      "OffMeta"   : {
+        "Funct" : window.LoadOffMeta
+      }
+    }
+
   document.getElementById("Title").innerHTML = "TeamComps";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
@@ -450,11 +649,65 @@ window.LoadTeamComps = function(){
 
   for(var items in TeamCompData){
     let Block = new MenuBlock(items, TeamCompData[items]);
-    document.getElementById("DataHolder").appendChild(Block.Elem);;
+    Block.Elem.onclick = window.TeamComp[items].Funct;
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+  }
+
+
+}
+
+window.Load222 = function() {
+
+  document.getElementById("Title").innerHTML = "2-2-2";
+  document.getElementById("DataHolder").innerHTML = "";
+
+  let Data222 = window.Data.Guides.TeamComps.Comps["2-2-2"].GuideData;
+
+  for(var items in Data222) {
+    window.localStorage.setItem("Button", 0);
+    console.log(Data222[items]);
+    let Block = new MenuBlock(items, Data222[items]);
+    Block.Elem.onclick = function(x){window.LoadTeamCompPage(x.path[1].id)}
+
+    document.getElementById("DataHolder").appendChild(Block.Elem);
   }
 }
 
+window.Load33 = function() {
 
+  document.getElementById("Title").innerHTML = "3-3";
+  document.getElementById("DataHolder").innerHTML = "";
+
+  let Data33 = window.Data.Guides.TeamComps.Comps["3-3"];
+
+
+  for(var items in Data33) {
+    window.localStorage.setItem("Button", 0);
+    let Block = new MenuBlock(items, Data33[items]);
+
+    Block.Elem.onclick = function(x){window.LoadTeamCompPage(x.path[1].id)}
+
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+  }
+}
+
+window.LoadOffMeta = function() {
+
+  document.getElementById("Title").innerHTML = "Off Meta";
+  document.getElementById("DataHolder").innerHTML = "";
+
+  let OffMetaData = window.Data.Guides.TeamComps.Comps.OffMeta;
+
+
+  for(var items in OffMetaData) {
+    window.localStorage.setItem("Button", 0);
+    let Block = new MenuBlock(items, OffMetaData[items]);
+
+    Block.Elem.onclick = function(x){window.LoadTeamCompPage(x.path[1].id)}
+
+    document.getElementById("DataHolder").appendChild(Block.Elem);
+  }
+}
 
 
 
@@ -488,10 +741,11 @@ window.LoadPayload  = function(){
   document.getElementById("DataHolder").innerHTML = "";
 
   let PayloadData = window.Data.Guides.Maps.MapTypes.Payload.Maps;
-
+  console.log(PayloadData)
   for(var items in PayloadData) {
     let Block = new MenuBlock(items, PayloadData[items]);
-    Block.Elem.onclick = PayloadData[items].Funct;
+    Block.Elem.onclick = function(x){window.LoadMapPage(x.path[1].id)}
+
     document.getElementById("DataHolder").appendChild(Block.Elem);
 
   }
@@ -506,13 +760,14 @@ window.LoadCP       = function(){
 
   for(var items in CPData) {
     let Block = new MenuBlock(items, CPData[items]);
-    Block.Elem.onclick = CPData[items].Funct;
+    Block.Elem.onclick = function(x){window.LoadMapPage(x.path[1].id)}
+
     document.getElementById("DataHolder").appendChild(Block.Elem);
 
   }
 
 }
-window.Load2CP      = function(){
+window.LoadCP2      = function(){
 
   document.getElementById("Title").innerHTML = "2CP";
   document.getElementById("DataHolder").innerHTML = "";
@@ -520,8 +775,10 @@ window.Load2CP      = function(){
   let CP2Data = window.Data.Guides.Maps.MapTypes.CP2.Maps;
 
   for(var items in CP2Data) {
+    console.log(items)
     let Block = new MenuBlock(items, CP2Data[items]);
-    Block.Elem.onclick = window.MapTypeData[items].Funct;
+    Block.Elem.onclick = function(x){window.LoadMapPage(x.path[1].id)}
+
     document.getElementById("DataHolder").appendChild(Block.Elem);
 
   }
@@ -621,19 +878,25 @@ window.LoadMapPage  = function(Map){
       else NewMap += Map[items];
     }
 
+    if(Map != "Blizzard World"){
 
-    //Set page title
-    document.getElementById("Title").innerHTML = Map;
+      window.TossBetaError();
 
-    //Wipe data holder
-    document.getElementById("DataHolder").innerHTML = "";
+    }
+    else{
+      //Set page title
+      document.getElementById("Title").innerHTML = Map;
 
-    let MapPageData = window.Data.Guides.Maps.MapList.Maps[NewMap];
+      //Wipe data holder
+      document.getElementById("DataHolder").innerHTML = "";
 
-    //Create wiki page
-    let Page = new PageBlock(Map, MapPageData);
-    document.getElementById("DataHolder").appendChild(Page.Elem);
+      let MapPageData = window.Data.Guides.Maps.MapList.Maps[NewMap];
 
+      //Create wiki page
+      let Page = new PageBlock(Map, MapPageData);
+      document.getElementById("DataHolder").appendChild(Page.Elem);
+
+  }
 
   }
 
@@ -655,6 +918,31 @@ window.LoadHeroPage  = function(Hero){
     document.getElementById("DataHolder").appendChild(Page.Elem);
 
 
+}
+
+window.LoadTeamCompPage = function(Comp) {
+
+  document.getElementById("Title").innerHTML = Comp;
+
+  //Wipe data holder
+  document.getElementById("DataHolder").innerHTML = "";
+
+
+  let TeamCompListData = window.Data.Guides.TeamComps.Comps;
+  let NewData = {}
+  if(TeamCompListData["2-2-2"].GuideData.hasOwnProperty(Comp)){
+    NewData = window.Data.Guides.TeamComps.Comps["2-2-2"].GuideData[Comp];
+  }
+  if(TeamCompListData["3-3"].GuideData.hasOwnProperty(Comp)){
+    NewData = window.Data.Guides.TeamComps.Comps["3-3"].GuideData[Comp];
+  }
+  if(TeamCompListData["OffMeta"].GuideData.hasOwnProperty(Comp)){
+    NewData = window.Data.Guides.TeamComps.Comps["OffMeta"].GuideData[Comp];
+  }
+
+  //Create wiki page
+  let Page = new StatsPageBlock(Comp, NewData);
+  document.getElementById("DataHolder").appendChild(Page.Elem);
 }
 
 //i'm glad i wrote everything in 3 menus, it's like i planned this ovo

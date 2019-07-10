@@ -580,11 +580,11 @@ window.Data = {
         /*"Description" : "These are the easier quizzes that lower ranked players should be able to get right",
         "Image" : "",
         "Content" : {}, */
-        "Easy Quiz 1" : {
+        "EasyQuiz1" : {
           "Description" : "quizzzz the first",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "Content" : {
-            "Video" : "C:/Users/Vedika Bhatnagar/Videos/Captures/GOOD VERSION.mp4",
+            "Video" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             "Answers" : {
               "Answer1" : "answer1",
               "Answer2" : "answer2",
@@ -593,7 +593,7 @@ window.Data = {
             }
           }
         },
-        "Easy Quiz 2" : {
+        "EasyQuiz2" : {
           "Description" : "quizzzz the second",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "Content" : {
@@ -606,7 +606,7 @@ window.Data = {
             }
           }
         },
-        "Easy Quiz 3" : {
+        "EasyQuiz3" : {
           "Description" : "quizzzz the third",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "Content" : {
@@ -624,13 +624,13 @@ window.Data = {
         /*"Description" : "These are medium ranked quizzes that mid tier players should be able to get right",
         "Image" : "",
         "Content" : {} */
-        "Medium Quiz 1" : {
+        "MediumQuiz1" : {
 
         },
-        "Medium Quiz 2" : {
+        "MediumQuiz2" : {
 
         },
-        "Medium Quiz 3" : {
+        "MediumQuiz3" : {
 
         }
       },
@@ -638,27 +638,14 @@ window.Data = {
         /*"Description" : "These are harder quizzes that high level players should be able to get right",
         "Image" : "",
         "Content" : {}*/
-        "Hard Quiz 1" : {
+        "HardQuiz1" : {
 
         },
-        "Hard Quiz 2" : {
+        "HardQuiz2" : {
 
         },
-        "Hard Quiz 3" :  {
+        "HardQuiz 3" :  {
 
-        }
-      },
-      "QuizList" : {
-        "Easy Quiz 1" : {
-          "Content" : {
-            "Video" : "C:/Users/Vedika Bhatnagar/Videos/Captures/GOOD VERSION.mp4",
-            "Answers" : {
-              "Answer1" : "answer1",
-              "Answer2" : "answer2",
-              "Answer3" : "answer3",
-              "Answer4" : "answer4"
-            }
-          }
         }
       }
     },

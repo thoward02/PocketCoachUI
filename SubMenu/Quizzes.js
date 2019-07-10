@@ -2,130 +2,54 @@
 class QuizPageBlock{
 
   constructor(Title, DataBlock){
+
     this.Title                 = Title;
-    this.DescText              = DataBlock.Description;
-    this.ImageSrc              = DataBlock.Image;
+    this.VideoSrc              = DataBlock.Content.Video;
 
     this.Elem                  = document.createElement("div");
-    this.Picture               = document.createElement("img");
-    this.Description           = document.createElement("div");
-    this.Header                = document.createElement("div");
+    this.Video                 = document.createElement("video");
 
     this.Body                  = document.createElement("div");
-    this.SubHead               = document.createElement("div");
-    this.SubText               = document.createElement("div");
+    this.Answer                = document.createElement("div");
+    this.Source                = document.createElement("source");
 
     this.Elem.id               = this.Title;
-    this.Header.innerHTML      = this.Title;
-    this.Description.innerHTML = this.DescText;
-    this.Picture.src           = this.ImageSrc;
+    this.Video.id              = "QuizVideo";
+    this.Source.src            = this.VideoSrc;
 
-    this.Elem.appendChild(this.Picture);
-    this.Elem.appendChild(this.Header);
-    this.Elem.appendChild(this.Description);
+    this.Video.appendChild(this.Source);
+    this.Elem.appendChild(this.Video);
     this.Elem.appendChild(this.Body);
-    this.Body.appendChild(this.SubHead);
-    this.Body.appendChild(this.SubText);
+    this.Body.appendChild(this.Answer);
 
-    for(var items in DataBlock.GuideData.Body) {
-      //Set up vars
-      let Type = DataBlock.Content.Body[items][0];
-      let Text = DataBlock.GuideData.Body[items][1];
+    for(var items in DataBlock.Content.Answers) {
 
+      let Text = DataBlock.Content.Answers[items];
+      let Element = document.createElement("div");
+      Element.innerHTML = Text;
 
-      //Handle Headers
-      if(Type == "Header"){
-        //Create element
-        let Element = document.createElement("div");
-        Element.innerHTML = Text;
+      Element.style.backgroundColor = "rgba(0,0,0,0.4)";
+      Element.style.marginTop  = "4%";
+      Element.style.marginBottom = "5%";
+      Element.style.marginLeft = "3%";
+      Element.style.borderRadius = "25px";
 
-        //style
-        Element.style.marginTop  = "5%";
-        Element.style.marginBottom = "5%";
-        Element.style.marginLeft = "3%";
-        Element.style.fontSize   = "70px";
-
-
-        //append
-        this.Elem.appendChild(Element);
-
-      }
-
-      if(Type == "SubHeader"){
-        //Create element
-        let Element = document.createElement("div");
-        Element.innerHTML = Text;
-
-        //style
-        Element.style.marginTop  = "5%";
-        Element.style.marginBottom = "5%";
-        Element.style.marginLeft = "3%";
-        Element.style.fontSize   = "45px";
-        Element.style.fontWeight = "200";
-
-
-        //append
-        this.Elem.appendChild(Element);
-
-      }
-
-      //Handle Paragraphs
-      if(Type == "Text"){
-        //Create element
-        let Element = document.createElement("div");
-        Element.innerHTML = Text;
-
-        //style
-        Element.style.marginLeft = "3%";
-        Element.style.marginRight = "3%";
-        Element.style.paddingTop = "2%";
-
-        Element.style.fontWeight = "200";
-        Element.style.fontSize = "30px";
-
-
-
-        //append
-        this.Elem.appendChild(Element);
-      }
-
-      if(Type == "Img"){
-        //Create menu te
-        let Title = DataBlock.GuideData.Body[items][2];
-
-        //Create element
-        let TitleElem = document.createElement("div");
-        TitleElem.innerHTML = Title;
-
-        let Element = document.createElement("img");
-        Element.src = Text;
-
-        //style
-        TitleElem.style.textAlign = "center";
-        TitleElem.style.fontSize = "60px";
-        TitleElem.style.fontWeight = "200";
-
-        TitleElem.style.paddingTop = "10%";
-
-
-        Element.style.width = "80%";
-        Element.style.height = "50%";
-        Element.style.marginLeft = "10%";
-        Element.style.paddingTop = "1%";
-        Element.style.paddingBottom = "5%";
-
-        Element.style.fontWeight = "200";
-        Element.style.fontSize = "30px";
-
-
-
-        //append
-        this.Elem.appendChild(TitleElem);
-        this.Elem.appendChild(Element);
-      }
-
+      this.Elem.appendChild(Element);
 
     }
+
+    //Video pause elements
+    this.Video.onclick = function(){
+      let Quiz = document.getElementById("QuizVideo");
+      if(Quiz.paused){
+        Quiz.play();
+      }else{
+        Quiz.pause()
+      }
+    }
+
+
+
     this.Style();
 
   }
@@ -139,6 +63,8 @@ class QuizPageBlock{
     this.Elem.style.marginBottom = "10%";
     this.Elem.style.paddingBottom = "10%";
     this.Elem.style.borderRadius = "25px";
+    this.Elem.style.textAlign   = "center";
+    this.Elem.style.overflowY   = "hidden";
 
     this.Elem.style.backgroundColor = "rgba(0,0,0,0.3)";
 
@@ -148,34 +74,32 @@ class QuizPageBlock{
     this.Elem.style.display     = "block";
     this.Elem.style.color       = "#D5FFF9";
 
-    this.Header.style.width = "51%";
-    this.Header.style.fontSize = "50px";
-    this.Header.style.textAlign = "left";
-    this.Header.style.marginLeft = "3%";
-    this.Header.style.paddingTop = "3%";
-    this.Header.style.paddingBottom = "5%";
-
-    this.Description.style.width      = "51%";
-    this.Description.style.marginLeft = "3%";
-    this.Description.style.paddingTop = "3%";
-    this.Description.style.textAlign   = "left";
-    this.Description.style.fontSize = "30px";
-    this.Description.style.fontWeight = "200";
-
     this.Body.style.textAlign   = "left";
     this.Body.style.fontWeight = "200";
     this.Body.style.fontSize = "30px";
     this.Body.style.padding = "5%";
 
-    this.Picture.style.width  = "40%";
-    this.Picture.style.height = "20%";
-    this.Picture.style.marginTop = "5%";
-    this.Picture.style.marginRight = "2%";
-    this.Picture.style.float  = "right";
-    this.Picture.style.overflow = "hidden";
-    this.Picture.style.borderRadius = "25px";
+    this.Video.style.width  = "80%";
+    this.Video.style.height = "30%";
+    this.Video.style.display = "block";
+    this.Video.style.margin = "auto";
+    this.Video.style.paddingLeft = "5%";
+    this.Video.style.paddingRight = "5%";
+    this.Video.style.paddingTop = "0%";
+    this.Video.style.paddingBottom = "0%";
 
-    this.SubText.style.marginLeft = "2%";
+    this.Video.style.marginTop = "3%";
+    this.Video.style.float  = "center";
+
+    this.Video.style.backgroundColor = "rgba(0,0,0,0.4)";
+    this.Video.style.overflow = "hidden";
+    this.Video.style.borderRadius = "25px";
+
+    this.Video.controls = "true";
+    this.Video.autoplay = true;
+
+
+    this.Answer.style.marginLeft = "32%";
 
 
 
@@ -234,5 +158,36 @@ window.LoadHard = function(){
 }
 
 window.LoadQuizPage = function(Quiz){
-  console.log(Quiz);
+
+  console.log(window.Data.Quizzes);
+  if(Quiz != "EasyQuiz1"){
+
+    window.TossBetaError();
+
+  } else {
+    document.getElementById("Title").innerHTML = Quiz;
+
+    let NewData = null;
+
+    //Wipe data holder
+    document.getElementById("DataHolder").innerHTML = "";
+
+    //Check for quiz
+    if(window.Data.Quizzes.Easy.hasOwnProperty(Quiz)){
+      NewData = window.Data.Quizzes.Easy[Quiz];
+    }
+    if(window.Data.Quizzes.Medium.hasOwnProperty(Quiz)){
+      NewData = window.Data.Quizzes.Medium[Quiz];
+    }
+    if(window.Data.Quizzes.Hard.hasOwnProperty(Quiz)){
+      NewData = window.Data.Quizzes.Hard[Quiz];
+
+    }
+
+    if(NewData != null){
+      //Create wiki page
+      let Page = new QuizPageBlock(Quiz, NewData);
+      document.getElementById("DataHolder").appendChild(Page.Elem);
+    }
+  }
 }

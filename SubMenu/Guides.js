@@ -658,7 +658,6 @@ window.Load222 = function() {
   let Data222 = window.Data.Guides.TeamComps.Comps["2-2-2"].GuideData;
 
   for(var items in Data222) {
-    window.localStorage.setItem("Button", 0);
     console.log(Data222[items]);
     let Block = new MenuBlock(items, Data222[items]);
     Block.Elem.onclick = function(x){window.LoadTeamCompPage(x.path[1].id)}
@@ -676,7 +675,6 @@ window.Load33 = function() {
 
 
   for(var items in Data33) {
-    window.localStorage.setItem("Button", 0);
     let Block = new MenuBlock(items, Data33[items]);
 
     Block.Elem.onclick = function(x){window.LoadTeamCompPage(x.path[1].id)}
@@ -694,7 +692,6 @@ window.LoadOffMeta = function() {
 
 
   for(var items in OffMetaData) {
-    window.localStorage.setItem("Button", 0);
     let Block = new MenuBlock(items, OffMetaData[items]);
 
     Block.Elem.onclick = function(x){window.LoadTeamCompPage(x.path[1].id)}

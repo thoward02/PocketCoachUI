@@ -917,27 +917,31 @@ window.LoadHeroPage  = function(Hero){
 
 window.LoadTeamCompPage = function(Comp) {
 
-  document.getElementById("Title").innerHTML = Comp;
+  if(Comp != "2-2-2") {
+    window.TossBetaError();
+  } else {
+    document.getElementById("Title").innerHTML = Comp;
 
-  //Wipe data holder
-  document.getElementById("DataHolder").innerHTML = "";
+    //Wipe data holder
+    document.getElementById("DataHolder").innerHTML = "";
 
 
-  let TeamCompListData = window.Data.Guides.TeamComps.Comps;
-  let NewData = {}
-  if(TeamCompListData["2-2-2"].GuideData.hasOwnProperty(Comp)){
-    NewData = window.Data.Guides.TeamComps.Comps["2-2-2"].GuideData[Comp];
+    let TeamCompListData = window.Data.Guides.TeamComps.Comps;
+    let NewData = {}
+    if(TeamCompListData["2-2-2"].GuideData.hasOwnProperty(Comp)){
+      NewData = window.Data.Guides.TeamComps.Comps["2-2-2"].GuideData[Comp];
+    }
+    if(TeamCompListData["3-3"].GuideData.hasOwnProperty(Comp)){
+      NewData = window.Data.Guides.TeamComps.Comps["3-3"].GuideData[Comp];
+    }
+    if(TeamCompListData["OffMeta"].GuideData.hasOwnProperty(Comp)){
+      NewData = window.Data.Guides.TeamComps.Comps["OffMeta"].GuideData[Comp];
+    }
+
+    //Create wiki page
+    let Page = new StatsPageBlock(Comp, NewData);
+    document.getElementById("DataHolder").appendChild(Page.Elem);
   }
-  if(TeamCompListData["3-3"].GuideData.hasOwnProperty(Comp)){
-    NewData = window.Data.Guides.TeamComps.Comps["3-3"].GuideData[Comp];
-  }
-  if(TeamCompListData["OffMeta"].GuideData.hasOwnProperty(Comp)){
-    NewData = window.Data.Guides.TeamComps.Comps["OffMeta"].GuideData[Comp];
-  }
-
-  //Create wiki page
-  let Page = new StatsPageBlock(Comp, NewData);
-  document.getElementById("DataHolder").appendChild(Page.Elem);
 }
 
 //i'm glad i wrote everything in 3 menus, it's like i planned this ovo

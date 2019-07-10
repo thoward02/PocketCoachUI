@@ -483,7 +483,14 @@ window.Data = {
                 "Header" : "",
                 "Body"   : [
                   ["Header" , "KIT"],
-                  ["Text"   , "Primary Fire - Ana's primary fire is a projectile bullet that travels at 125 m/s, and does 75 healing / damage over 0.85 seconds"]
+                  ["Text"   , "Health: 200HP"],
+                  ["Text"   , "Primary Fire - Ana's primary fire is a projectile bullet that travels at 85.5m/s, and does 75 healing / 70 damage over 0.85 seconds depending on who she targets. The projectiles can be stopped by barriers and walls, and travel relatively slowly in comparison to projectiles like Hanzo’s arrows fully drawn (86 m/s). They also travel through fully healed teammates, and hit whatever is behind them, allowing Ana to fire into groups and hit her intended target. "],
+                  ["Text"   , "Secondary Fire - Ana’s secondary fire activates her scope (ADS - aim down sights), allowing her bullets to become hitscan (shots are instant, where you click is where you hit), while also decreasing her movement speed by 65%, and decreasing her field of vision. Firring while scoped in leaves a trail from where the bullet was fired, thus cluing enemies in on the position of the ana. Scoping in takes longer than scoping out with scoping in taking a 0.25 seconds, and unscoping taking 0.15 seconds."],
+                  ["Text"   , "E - Biotic Grenade - Usually just called grenade, this ability is a splash base throwable that has a 4 meter splash radius and can be thrown at 30 m/s. If a teammate is hit with the splash, they get an additional 50% healing from all sources, and an instant 100 HP heal. Enemies, however, receive 60 damage when hit with the splash, along with a 4 second long debuff that prevents them from being healed. When enemies are hit with the grenade, usually it is called that they are ‘antied’ implying they can’t be healed and should be focused. Both the healing buff and debuff apply to shields as well. This ability can be used every 10 seconds."],
+                  ["Text"   , "Shift - Sleep Dart - Usually just called sleep, this ability is a projectile with a 0.5 second cast time that is Ana’s primary method of self protection. When casted, Ana throws a sleep dart traveling at 60 m/s in the direction of where ever she was pointing when the cast ended. When the sleep dart hits an enemy, that enemy is knocked out for up to 6 second wherever they were standing, effectively removing them from the engagement. However, if the enemy receives any sort of damage, after 0.5 seconds of a wakeup animation they will have full control of their body again. This ability can be used every 12 seconds."],
+                  ["Text"   , "Q - Nano Boost - Usually called Nano, this ability is Ana’s ultimate, which applies a nano boost to a single target of her choosing. Nano boost applies a 50% damage reduction buff and 50% damage increase to the hero that lasts 8 seconds, along with an instant 250 Heal."],
+                  ["Text"   , "Weapon - Biotic Rifle - Ana’s biotic rifle holds 14 rounds and can fire a round every 1.25 seconds. The rifle as a 1.5 second reload time, and during this time Ana can not produce any heals for her team."],
+                  ["Header"   , "Guide - Healing"],
                 ]
 
               }
@@ -580,42 +587,16 @@ window.Data = {
         /*"Description" : "These are the easier quizzes that lower ranked players should be able to get right",
         "Image" : "",
         "Content" : {}, */
-        "EasyQuiz1" : {
+        "Easy-Quiz" : {
           "Description" : "quizzzz the first",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "Content" : {
             "Video" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             "Answers" : {
-              "Answer1" : "answer1",
-              "Answer2" : "answer2",
-              "Answer3" : "answer3",
-              "Answer4" : "answer4"
-            }
-          }
-        },
-        "EasyQuiz2" : {
-          "Description" : "quizzzz the second",
-          "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Content" : {
-            "Video" : "",
-            "Answers" : {
-              "Answer1" : "",
-              "Answer2" : "",
-              "Answer3" : "",
-              "Answer4" : ""
-            }
-          }
-        },
-        "EasyQuiz3" : {
-          "Description" : "quizzzz the third",
-          "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Content" : {
-            "Video" : "",
-            "Answers" : {
-              "Answer1" : "",
-              "Answer2" : "",
-              "Answer3" : "",
-              "Answer4" : ""
+              "Answer1" : "not sure how long the answer choices will be",
+              "Answer2" : "but this seems like a good estimation",
+              "Answer3" : "just in case",
+              "Answer4" : "for styling"
             }
           }
         }
@@ -624,13 +605,7 @@ window.Data = {
         /*"Description" : "These are medium ranked quizzes that mid tier players should be able to get right",
         "Image" : "",
         "Content" : {} */
-        "MediumQuiz1" : {
-
-        },
-        "MediumQuiz2" : {
-
-        },
-        "MediumQuiz3" : {
+        "Medium-Quiz" : {
 
         }
       },
@@ -638,13 +613,7 @@ window.Data = {
         /*"Description" : "These are harder quizzes that high level players should be able to get right",
         "Image" : "",
         "Content" : {}*/
-        "HardQuiz1" : {
-
-        },
-        "HardQuiz2" : {
-
-        },
-        "HardQuiz 3" :  {
+        "Hard-Quiz" : {
 
         }
       }

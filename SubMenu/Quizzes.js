@@ -29,10 +29,10 @@ class QuizPageBlock{
       Element.innerHTML = Text;
 
       Element.style.backgroundColor = "rgba(0,0,0,0.4)";
-      Element.style.marginTop  = "4%";
-      Element.style.marginBottom = "5%";
-      Element.style.marginLeft = "3%";
+      Element.style.margin = "4%";
       Element.style.borderRadius = "25px";
+      Element.style.minWidth = "50%";
+      Element.style.height = "auto";
 
       this.Elem.appendChild(Element);
 
@@ -127,7 +127,8 @@ window.LoadEasy = function(){
 
 //Medium
 window.LoadMedium = function(){
-  document.getElementById("Title").innerHTML = "Medium";
+  window.TossBetaError();
+  /*document.getElementById("Title").innerHTML = "Medium";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
 
@@ -139,10 +140,13 @@ window.LoadMedium = function(){
 
     document.getElementById("DataHolder").appendChild(Block.Elem);
   }
+  */
 }
 
 //Hard
 window.LoadHard = function(){
+  window.TossBetaError();
+  /*
   document.getElementById("Title").innerHTML = "Hard";
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
@@ -154,18 +158,19 @@ window.LoadHard = function(){
     Block.Elem.onclick = function(x){window.LoadQuizPage(x.path[1].id)}
 
     document.getElementById("DataHolder").appendChild(Block.Elem);
-  }
+  } */
 }
 
 window.LoadQuizPage = function(Quiz){
 
   console.log(window.Data.Quizzes);
-  if(Quiz != "EasyQuiz1"){
+  if(Quiz != "Easy-Quiz"){
 
     window.TossBetaError();
 
   } else {
-    document.getElementById("Title").innerHTML = Quiz;
+
+    document.getElementById("Title").innerHTML = Quiz.replace(/_/g, " ");
 
     let NewData = null;
 

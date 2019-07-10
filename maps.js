@@ -580,36 +580,57 @@ window.Data = {
         /*"Description" : "These are the easier quizzes that lower ranked players should be able to get right",
         "Image" : "",
         "Content" : {}, */
-        "Quiz 1" : {
+        "Easy Quiz 1" : {
           "Description" : "quizzzz the first",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "Content" : {
-            "Video" : "",
-            "Answer1" : ""
+            "Video" : "C:/Users/Vedika Bhatnagar/Videos/Captures/GOOD VERSION.mp4",
+            "Answers" : {
+              "Answer1" : "answer1",
+              "Answer2" : "answer2",
+              "Answer3" : "answer3",
+              "Answer4" : "answer4"
+            }
           }
         },
-        "Quiz 2" : {
+        "Easy Quiz 2" : {
           "Description" : "quizzzz the second",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Content" : {}
+          "Content" : {
+            "Video" : "",
+            "Answers" : {
+              "Answer1" : "",
+              "Answer2" : "",
+              "Answer3" : "",
+              "Answer4" : ""
+            }
+          }
         },
-        "Quiz 3" : {
+        "Easy Quiz 3" : {
           "Description" : "quizzzz the third",
           "Image" : "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Content" : {}
+          "Content" : {
+            "Video" : "",
+            "Answers" : {
+              "Answer1" : "",
+              "Answer2" : "",
+              "Answer3" : "",
+              "Answer4" : ""
+            }
+          }
         }
       },
       "Medium" : {
         /*"Description" : "These are medium ranked quizzes that mid tier players should be able to get right",
         "Image" : "",
         "Content" : {} */
-        "Quiz 1" : {
+        "Medium Quiz 1" : {
 
         },
-        "Quiz 2" : {
+        "Medium Quiz 2" : {
 
         },
-        "Quiz 3" : {
+        "Medium Quiz 3" : {
 
         }
       },
@@ -617,14 +638,27 @@ window.Data = {
         /*"Description" : "These are harder quizzes that high level players should be able to get right",
         "Image" : "",
         "Content" : {}*/
-        "Quiz 1" : {
+        "Hard Quiz 1" : {
 
         },
-        "Quiz 2" : {
+        "Hard Quiz 2" : {
 
         },
-        "Quiz 3" :  {
+        "Hard Quiz 3" :  {
 
+        }
+      },
+      "QuizList" : {
+        "Easy Quiz 1" : {
+          "Content" : {
+            "Video" : "C:/Users/Vedika Bhatnagar/Videos/Captures/GOOD VERSION.mp4",
+            "Answers" : {
+              "Answer1" : "answer1",
+              "Answer2" : "answer2",
+              "Answer3" : "answer3",
+              "Answer4" : "answer4"
+            }
+          }
         }
       }
     },

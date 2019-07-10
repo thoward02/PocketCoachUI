@@ -57,6 +57,7 @@ class MenuBlock{
       this.Elem.style.backgroundColor = "rgba(0,0,0,0.3)";
 
       this.Elem.style.borderRadius = "20px";
+      this.Elem.style.borderWidth = "0";
 
       //Setup picture
       this.Picture.style.width      = "30%";
@@ -69,7 +70,7 @@ class MenuBlock{
 
       //Setup Header
       this.Header.style.textAlign   = "left";
-      this.Header.style.marginTop   = "2.8%";
+      this.Header.style.marginTop   = "2%";
       this.Header.style.marginBottom   = "1%";
       this.Header.style.marginLeft  = "32%";
       this.Header.style.fontSize = "45px";
@@ -195,7 +196,7 @@ class PageBlock{
         TitleElem.style.fontSize = "60px";
         TitleElem.style.fontWeight = "200";
 
-        TitleElem.style.paddingTop = "10%";
+        TitleElem.style.paddingTop = "7%";
 
 
         Element.style.width = "80%";

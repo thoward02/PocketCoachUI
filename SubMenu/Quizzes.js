@@ -33,6 +33,8 @@ class QuizPageBlock{
       Element.style.borderRadius = "25px";
       Element.style.minWidth = "50%";
       Element.style.height = "auto";
+      Element.style.paddingTop = "2%";
+      Element.style.paddingBottom = "2%";
 
       this.Elem.appendChild(Element);
 
@@ -170,7 +172,7 @@ window.LoadQuizPage = function(Quiz){
 
   } else {
 
-    document.getElementById("Title").innerHTML = Quiz.replace(/_/g, " ");
+    document.getElementById("Title").innerHTML = Quiz.replace(/-/g, " ");
 
     let NewData = null;
 

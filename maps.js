@@ -491,9 +491,13 @@ window.Data = {
                   ["Text"   , "Q - Nano Boost - Usually called Nano, this ability is Ana's ultimate, which applies a nano boost to a single target of her choosing. Nano boost applies a 50% damage reduction buff and 50% damage increase to the hero that lasts 8 seconds, along with an instant 250 Heal."],
                   ["Text"   , "Weapon - Biotic Rifle - Ana's biotic rifle holds 14 rounds and can fire a round every 1.25 seconds. The rifle has a 1.5 second reload time, and during this time, Ana can not produce any heals for her team."],
                   ["Header"   , "Guide - Healing"],
-                  ["Text"   , ""],
-                  ["Text"   , ""],
-                  ["Text"   , ""],
+                  ["Text"   , "Ana’s entire kit is based around being able to heavily pump single targets, and keep them alive despite massive damage. Ana’s raw healing capability makes her a great main healer, thus implying it is her job that her front line stays alive. There are three things that can prevent Ana from being able to keep her front line healed."],
+                  ["Text"   , "Aim - To play Ana both your ADS aim and unscoped aim must be incredibly accurate, for if your tank is being hounded, just missing one bullet could mean that he dies and you lose the fight. This is due to both the heal over time effect that Ana has, and her low fire rate. "],
+                  ["Text"   , "Positioning - Ensuring that you have consistent clear sight lines onto your tank, that doesn’t put you in a threatening position is key for Ana. If you’re being pressured / can’t see your tank, you’re not going to be able to optimally heal them. "],
+                  ["Text"   , "Cool Down Management - Throwing your grenade out haphazardly can quickly result in a team wipe, for your grenade is key to getting out that extra heals for your team. If you waste your grenade on healing your HP when it’s at 198, and your tank gets hard pressured, what are you to do when both you and your off support can’t keep him alive with your current HPS output. This also works inversely, because taking a moment to use biotic grenade removes about half a second worth of heal time away from your team. Taking that time to throw that grenade could end up killing your target"],
+                  ["Text"   , "To ensure you’re getting the maximum value out of your Ana play, start with your aim by aim training every day before you start your practice. If you were playing DPS would you really want a healer who hits 40% of their shots? Then positioning is always about reading the battlefield and positioning according to where your team wants to play from. Staying with your off healer is key to keeping pressure off you, and positioning before you engage ensures you will have sightlines on your tanks during the engage."],
+                  ["Text"   , "Cooldown management at a high level boils down to being able to read the situation and assess what resources you may need to pour into the fight. You can usually find an easy way to assess the situation by asking “Was it really worth it?”."],
+
 
                 ]
 

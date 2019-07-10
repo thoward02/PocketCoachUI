@@ -391,18 +391,6 @@ window.Data = {
 
             }
           },
-          "OffSupport"  : {
-            "Description" : "Offsupports exist to keep the main healer alive, and provide utility to the team",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/icon-portrait.png",
-          } ,
-          "MainTank"    : {
-            "Description" : "Main tanks take space for the team and provide a front line for the team to stand behind",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/icon-portrait.png",
-          },
-          "OffTank"     : {
-            "Description" : "Off tanks keep the team alive through peels, and provide support to the Main Tank in taking space",
-            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/icon-portrait.png",
-          },
           "DPS"          : {
             "Description" : "These Heroes are the primary damage dealing heroes within Overwatch",
             "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/icon-portrait.png",
@@ -472,7 +460,19 @@ window.Data = {
                   "Image": "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/icon-portrait.png"
                 }
               }
-          }
+          },
+          "OffSupport"  : {
+            "Description" : "Offsupports exist to keep the main healer alive, and provide utility to the team",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/icon-portrait.png",
+          } ,
+          "MainTank"    : {
+            "Description" : "Main tanks take space for the team and provide a front line for the team to stand behind",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/icon-portrait.png",
+          },
+          "OffTank"     : {
+            "Description" : "Off tanks keep the team alive through peels, and provide support to the Main Tank in taking space",
+            "Image" : "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/icon-portrait.png",
+          },
         },
         "HeroList"  : {
 
@@ -483,7 +483,7 @@ window.Data = {
                 "Header" : "",
                 "Body"   : [
                   ["Header" , "KIT"],
-                  ["Text"   , "Primary Fire - bang"]
+                  ["Text"   , "Primary Fire - Ana's primary fire is a projectile bullet that travels at 125 m/s, and does 75 healing / damage over 0.85 seconds"]
                 ]
 
               }

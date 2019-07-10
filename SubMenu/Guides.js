@@ -592,13 +592,13 @@ window.LoadHeroes = function(){
       "Funct" : window.LoadMainSupport
     },
     "OffSupport" : {
-      "Funct" : window.LoadOffSuport
+      "Funct" : window.TossBetaError
     },
     "MainTank" : {
-      "Funct" : window.LoadMainTank
+      "Funct" : window.TossBetaError
     },
     "OffTank" : {
-      "Funct" : window.LoadOffTank
+      "Funct" : window.TossBetaError
     }
 
   }
@@ -719,7 +719,6 @@ window.LoadHybrid   = function(){
 
 
   for(var items in HybridData) {
-    window.localStorage.setItem("Button", 0);
     let Block = new MenuBlock(items, HybridData[items]);
 
     Block.Elem.onclick = function(x){window.LoadMapPage(x.path[1].id)}

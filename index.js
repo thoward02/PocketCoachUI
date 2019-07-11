@@ -1,4 +1,23 @@
 //Index
+window.ClearPlus = function(){
+
+
+
+
+}
+
+window.AddPlus = function(){
+
+  let Header = document.getElementById("TitleCard");
+  let Plus   = document.createElement("img");
+
+  Plus.src = "./Resources/plus.svg";
+
+  Header.appendChild(Plus)
+
+
+}
+
 window.SwitchToMenu  = function(){
     //Vars
     let LeftSide = document.getElementById("LeftSide");

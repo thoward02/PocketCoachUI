@@ -190,7 +190,7 @@ window.TossBetaError = function(){
 
   //Fill
   ErrorText.innerHTML       = "This is just a BETA, you can't access that right now c:";
-  OkayBox.innerHTML         = "That's kinda shitty...?";
+  OkayBox.innerHTML         = "That's kinda sucky...?";
   BackgroundDiv.id          = "ErrorText";
 
 

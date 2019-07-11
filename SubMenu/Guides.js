@@ -628,11 +628,11 @@ window.LoadTeamComps = function(){
         "Funct" : window.Load222
       },
       "3-3"       : {
-        "Funct" : window.Load33
+        "Funct" : window.TossBetaError
 
       },
       "OffMeta"   : {
-        "Funct" : window.LoadOffMeta
+        "Funct" : window.TossBetaError
       }
     }
 

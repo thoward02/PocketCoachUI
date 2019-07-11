@@ -524,7 +524,7 @@ window.Data = {
 
                 ]
               },
-              "Comp2" : {
+              "Double Sniper" : {
                 "Header" : "Double Sniper",
                 "Image" : "./Resources/Heroes/widowmaker.png",
                 "Description"  : "Interchangeable tank set (usually high mobility), boasting a pair of snipers and a long range healer with a utility based secondary support ",
@@ -533,7 +533,7 @@ window.Data = {
                   "Text"   : "body text~"
                 }
               },
-              "Comp3" : {
+              "Rein Zarya" : {
                 "Header" : "Default Rein Zarya",
                 "Image" : "./Resources/Heroes/zarya.png",
                 "Description"   : "Rein Zarya, one long range dps and one anti flanker dps, and whichever healers are in meta rotation at the moment. ",
@@ -546,9 +546,9 @@ window.Data = {
           },
           "3-3"       : {
             "Description" : "3-3 is a comp type involving 3 tanks and 3 healers, with the most prominant form known as GOATs.",
-            "Image" : "",
+            "Image" : "https://cdn.vox-cdn.com/thumbor/zXO530sV-zHDpDCm6_zeiTNRwXw=/0x0:7542x4233/1200x800/filters:focal(1450x694:2656x1900)/cdn.vox-cdn.com/uploads/chorus_image/image/63120868/OVR_Brigitte_001.0.png",
             "GuideData" : {
-              "Comp1" : {
+              "3-3" : {
                 "Header" : "header1",
                 "Description"   : "a desc",
                 "Body"   : {
@@ -577,9 +577,9 @@ window.Data = {
           },
           "OffMeta"   : {
             "Description" : "This category is for what could be considered as off meta, or cheese comps",
-            "Image" : "",
+            "Image" : "https://twinfinite.net/wp-content/uploads/2017/07/e70bae8c6f84c352a5ea528bb6f21643.jpg",
             "GuideData" : {
-              "Header" : "header1",
+              "Header" : "OffMeta",
               "Body"   : {
                 "Header" : "header2",
                 "Text"   : "body text"

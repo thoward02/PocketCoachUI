@@ -7,18 +7,18 @@ class QuizPageBlock{
     this.VideoSrc              = DataBlock.Content.Video;
 
     this.Elem                  = document.createElement("div");
-    this.Video                 = document.createElement("video");
+    this.Video                 = document.createElement("img");
 
     this.Body                  = document.createElement("div");
     this.Answer                = document.createElement("div");
-    this.Source                = document.createElement("source");
     this.Question              = document.createElement("div");
 
     this.Elem.id               = this.Title;
     this.Video.id              = "QuizVideo";
-    this.Source.src            = this.VideoSrc;
+    this.Question.id           = "Question"
+    this.Body.id               = "Body-Quest"
+    this.Video.src = "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/legacy-images/imagefeed/An%20Epic%20Evolution/Overwatchreview610.jpg"
 
-    this.Video.appendChild(this.Source);
     this.Elem.appendChild(this.Video);
     this.Elem.appendChild(this.Body);
     this.Body.appendChild(this.Answer);
@@ -39,20 +39,14 @@ class QuizPageBlock{
       Element.style.height = "auto";
       Element.style.paddingTop = "2%";
       Element.style.paddingBottom = "2%";
+      Element.style.fontFamily  = "Montserrat";
+      Element.style.fontWeight  = "200";
 
       this.Elem.appendChild(Element);
 
     }
 
     //Video pause elements
-    this.Video.onclick = function(){
-      let Quiz = document.getElementById("QuizVideo");
-      if(Quiz.paused){
-        Quiz.play();
-      }else{
-        Quiz.pause()
-      }
-    }
 
 
 
@@ -80,19 +74,17 @@ class QuizPageBlock{
     this.Elem.style.display     = "block";
     this.Elem.style.color       = "#D5FFF9";
 
-    this.Body.style.textAlign   = "left";
-    this.Body.style.fontWeight = "200";
-    this.Body.style.fontSize = "30px";
-    this.Body.style.padding = "5%";
 
     this.Video.style.width  = "80%";
-    this.Video.style.height = "30%";
+    this.Video.style.height = "25%";
     this.Video.style.display = "block";
     this.Video.style.margin = "auto";
+    this.Video.style.marginTop = "2%";
+    this.Video.style.marginBottom = "2%";
     this.Video.style.paddingLeft = "5%";
     this.Video.style.paddingRight = "5%";
-    this.Video.style.paddingTop = "0%";
-    this.Video.style.paddingBottom = "0%";
+    this.Video.style.paddingTop = "2%";
+    this.Video.style.paddingBottom = "2%";
 
     this.Video.style.marginTop = "3%";
     this.Video.style.float  = "center";
@@ -105,16 +97,16 @@ class QuizPageBlock{
     this.Video.autoplay = true;
 
 
-    this.Answer.style.marginLeft = "32%";
-
-    this.Question.style.marginLeft = "32%";
     this.Question.style.backgroundColor = "rgba(0,0,0,0.4)";
-    this.Question.style.margin = "4%";
+    this.Question.style.marginLeft = "5%";
     this.Question.style.borderRadius = "25px";
-    this.Question.style.minWidth = "50%";
+    this.Question.style.width = "90%";
     this.Question.style.height = "auto";
+    this.Question.style.marginTop = "4%";
     this.Question.style.paddingTop = "2%";
     this.Question.style.paddingBottom = "2%";
+    this.Question.style.fontSize = "60px";
+    this.Question.style.textAlign = "center";
 
 
 
@@ -131,6 +123,7 @@ window.LoadEasy = function(){
   document.getElementById("AppHolder-BlackBox").onclick();
 
   let EasyData = window.Data.Quizzes.Easy;
+
 
   for(var items in EasyData) {
     let Block = new MenuBlock(items, EasyData[items]);
@@ -179,7 +172,7 @@ window.LoadHard = function(){
 
 window.LoadQuizPage = function(Quiz){
   //QwQ
-  if(Quiz != "Easy-Quiz"){
+  if(Quiz != "Easy-Quiz" || Quiz == "DataHolder"){
 
     window.TossBetaError();
 

@@ -596,16 +596,15 @@ window.Data = {
         "Image" : "",
         "Content" : {}, */
         "Easy-Quiz" : {
-          "Description" : "quizzzz the first",
+          "Description" : "How can the pharah avoid the tracer?",
           "Image" : "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/legacy-images/imagefeed/An%20Epic%20Evolution/Overwatchreview610.jpg",
           "Content" : {
             "Video" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             "Question" : "How can the pharah avoid the tracer?",
             "Answers" : {
-              "Answer1" : "",
-              "Answer2" : "but this seems like a good estimation",
-              "Answer3" : "just in case",
-              "Answer4" : "for styling"
+              "Answer1" : "By firing at the tracer, she can remove her from the fight",
+              "Answer2" : "She can jump pack into the sky",
+              "Answer3" : "She can boop the tracer away"
             }
           }
         }

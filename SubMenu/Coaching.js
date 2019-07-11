@@ -1,9 +1,10 @@
 //Load Coaching
 
-class Request{
+class RequestedCoach{
 
-  consrtuctor(Request){
+  constructor(Request){
     //Set up variables
+    console.log(Request)
     this.Author         = Request.Author;
     this.AuthorImg      = Request.AuthorImg;
     this.Title          = Request.Title;
@@ -35,10 +36,26 @@ class Request{
     this.Elem.appendChild(this.Header)
     this.Elem.appendChild(this.Body)
 
+    document.getElementById("DataHolder").appendChild(this.Elem);
+
     this.Style();
   }
 
   Style(){
+
+    this.Elem.style.width           = "80%";
+    this.Elem.style.height          = "20%";
+    this.Elem.style.margin          = "10%";
+    this.Elem.style.borderRadius    = "25px";
+    this.Elem.style.backgroundColor = "rgba(0,0,0,0.2)";
+    this.Elem.style.overflow        = "hidden"
+
+    this.Header.style.width         = "100%";
+    this.Header.style.height        = "2  0%";
+    this.Header.style.backgroundColor = "rgba(0,0,0,0.5)"
+
+
+
     //   ********************************************
     //   *  <IMG>    <         NAME         >       *
     //   ********************************************
@@ -63,7 +80,15 @@ window.LoadRequests = function(){
   document.getElementById("DataHolder").innerHTML = "";
   document.getElementById("AppHolder-BlackBox").onclick();
 
+  let TestData = {
+    "Author" : "Taylor Howard",
+    "AuthorImg" : "https://lh3.googleusercontent.com/a-/AAuE7mB1bAC1dNEezCqDZYixhshuy8y8tyK1i6IqFOKjhQ=s96",
+    "Title" : "Testinggg",
+    "Description" : "There once was a boy named harry who was born with an interesting scar",
+    "Upvotes" : "602"
+  }
 
+  let testelem = new RequestedCoach(TestData);
 
 
 }

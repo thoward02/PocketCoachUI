@@ -6,6 +6,7 @@ class MenuBlock{
     this.ImageSrc              = DataBlock.Image;
 
     let TitleText = this.Title.replace(/_/g, " ");
+    //TitleText = this.Title.replace(/-/g, " ");
     this.Title = TitleText;
 
     //Modify text

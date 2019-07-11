@@ -600,8 +600,9 @@ window.Data = {
           "Image" : "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/legacy-images/imagefeed/An%20Epic%20Evolution/Overwatchreview610.jpg",
           "Content" : {
             "Video" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+            "Question" : "How can the pharah avoid the tracer?",
             "Answers" : {
-              "Answer1" : "not sure how long the answer choices will be",
+              "Answer1" : "",
               "Answer2" : "but this seems like a good estimation",
               "Answer3" : "just in case",
               "Answer4" : "for styling"

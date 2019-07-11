@@ -12,6 +12,7 @@ class QuizPageBlock{
     this.Body                  = document.createElement("div");
     this.Answer                = document.createElement("div");
     this.Source                = document.createElement("source");
+    this.Question              = document.createElement("div");
 
     this.Elem.id               = this.Title;
     this.Video.id              = "QuizVideo";
@@ -21,6 +22,9 @@ class QuizPageBlock{
     this.Elem.appendChild(this.Video);
     this.Elem.appendChild(this.Body);
     this.Body.appendChild(this.Answer);
+    this.Body.appendChild(this.Question);
+
+    this.Question.innerHTML = DataBlock.Content.Question;
 
     for(var items in DataBlock.Content.Answers) {
 
@@ -103,6 +107,16 @@ class QuizPageBlock{
 
     this.Answer.style.marginLeft = "32%";
 
+    this.Question.style.marginLeft = "32%";
+    this.Question.style.backgroundColor = "rgba(0,0,0,0.4)";
+    this.Question.style.margin = "4%";
+    this.Question.style.borderRadius = "25px";
+    this.Question.style.minWidth = "50%";
+    this.Question.style.height = "auto";
+    this.Question.style.paddingTop = "2%";
+    this.Question.style.paddingBottom = "2%";
+
+
 
 
 
@@ -164,8 +178,7 @@ window.LoadHard = function(){
 }
 
 window.LoadQuizPage = function(Quiz){
-
-  console.log(window.Data.Quizzes);
+  //QwQ
   if(Quiz != "Easy-Quiz"){
 
     window.TossBetaError();

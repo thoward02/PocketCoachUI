@@ -101,7 +101,7 @@ class RequestedCoach{
     this.TitleDiv.style.fontSize      = "30px"
 
     this.DescriptionDiv.style.margin  = "1%";
-    this.DescriptionDiv.style.fontSize  = "30px";
+    this.DescriptionDiv.style.fontSize  = "38px";
 
     this.Body.style.height          = "80%";
     this.Body.style.width           = "100%";
@@ -112,7 +112,7 @@ class RequestedCoach{
     this.UpvoteButton.style.height  = "10%";
     this.UpvoteButton.style.width  = "10%";
     this.UpvoteButton.style.bottom  = "14%";
-    this.UpvoteButton.style.right  = "5%";
+    this.UpvoteButton.style.right  = "8%";
     this.UpvoteButton.style.marginRight = "1%"
 
     this.UpvotePicture.style.width  = "50%";
@@ -122,7 +122,7 @@ class RequestedCoach{
     this.UpvotesDiv.style.height  = "10%";
     this.UpvotesDiv.style.width  = "10%";
     this.UpvotesDiv.style.bottom  = "16%";
-    this.UpvotesDiv.style.right  = "0";
+    this.UpvotesDiv.style.right  = "3%";
 
 
 
@@ -250,13 +250,6 @@ window.LoadRequests = function(){
         "Description" : "I've been main tanking for two years now, and I've climbed all the way from silver, but I just can't seem to climb higher than 2800! I keep loosing games against effective dps players. Can someone run through my play and see if I'm not protecting my team enough // providing enough space for them todo their work?",
         "Upvotes" : "4K"
       },
-      "2" : {
-        "Author" : "K1yle",
-        "AuthorImg" : "https://www.pngkey.com/png/detail/24-243377_overwatch-symbol-png-steering-wheel.png",
-        "Title" : "[COACHING REQUEST] 4K Hamster tricks",
-        "Description" : "Any coaches looking to teach a 4.2K SR player how to play hamster at a 4K level? I want to be able to have a larger hero pool for my main tank line.",
-        "Upvotes" : "3.6K"
-      },
       "3" : {
         "Author" : "Aud",
         "AuthorImg" : "https://cdn.discordapp.com/icons/572176692752416778/1bb79fe9f22de6fd68ca095ef03d0e17.webp?size=128",
@@ -266,6 +259,7 @@ window.LoadRequests = function(){
       }
     }
   for(var items in TestData){
+
     let testelem = new RequestedCoach(TestData[items]);
   }
 
